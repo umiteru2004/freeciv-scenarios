@@ -51036,11 +51036,11 @@ msgstr "指定時間ごと"
 
 #: server/settings.c:410
 msgid "See everything inside borders"
-msgstr "国境線内ではすべて可視にする"
+msgstr "国境線内全域が視界"
 
 #: server/settings.c:412
 msgid "Borders expand to unknown, revealing tiles"
-msgstr "未知のタイルまで国境を拡張し、タイルを可視にする"
+msgstr "未知の領域にも国境線を拡張し、線内全域が視界"
 
 #: server/settings.c:423
 msgid "Fixed"
@@ -51172,19 +51172,19 @@ msgstr "死亡プレイヤーに全マップを開示"
 
 #: server/settings.c:537
 msgid "Allows units to be airlifted from allied cities"
-msgstr "同盟の都市からの空輸を許可する"
+msgstr "同盟国からの空輸を許可"
 
 #: server/settings.c:539
 msgid "Allows units to be airlifted to allied cities"
-msgstr "同盟の都市への空輸を許可する"
+msgstr "同盟国への空輸を許可"
 
 #: server/settings.c:541
 msgid "Unlimited units from source city"
-msgstr "都市から出発するユニット数を制限しない"
+msgstr "出発するユニットの数が無制限"
 
 #: server/settings.c:543
 msgid "Unlimited units to destination city"
-msgstr "都市に到着するユニット数を制限しない"
+msgstr "到着するユニットの数が無制限"
 
 #: server/settings.c:554
 msgid "All players move concurrently"
@@ -52730,7 +52730,6 @@ msgid "National borders"
 msgstr "国境線"
 
 #: server/settings.c:2463
-#, fuzzy
 msgid ""
 "If this is not disabled, then any land tiles around a city or border-"
 "claiming extra (like the classic ruleset's Fortress base) will be owned by "
@@ -52738,9 +52737,11 @@ msgid ""
 "borders visible at once. ENABLED will, in some rulesets, grant the same "
 "visibility if certain conditions are met."
 msgstr ""
-"無効以外の場合、都市周辺の陸地タイルや、国境線をもたらす効果を持つ"
-"extra(classicルールセットにおける要塞など)があるタイルは、その民族に帰属しま"
-"す。"
+"この設定が無効でない場合、都市や国境線を拡大する地形特徴（Classicルールセットにおける要塞等）の周囲にある陸上タイルは、すべてその都市や地形特徴を所有する国が合わせて所有します。\n"
+"\n"
+"「国境線内全域が視界」か「未知の領域にも国境線を拡張し、線内全域が視界」にすると、国境の内側がすべて視界に入ります。\n"
+"\n"
+"「有効」にすると、ルールセットによっては、特定の条件の下で国境線の内側が視界に入ります。"
 
 #: server/settings.c:2474
 msgid "Units inside borders cause no unhappiness"
@@ -52930,7 +52931,6 @@ msgstr "空輸の条件"
 #. * between parenthesis and in uppercase must not be
 #. * translated.
 #: server/settings.c:2619
-#, fuzzy
 #| msgid ""
 #| "This setting affects airlifting units between cities. It can be a set of "
 #| "the following values:\n"
@@ -52954,21 +52954,21 @@ msgid ""
 "city doesn't reduce the airlifted counter. It depends on the ruleset whether "
 "this is possible even with zero airlift capacity."
 msgstr ""
-"この設定は都市間でのユニットの空輸に影響します。以下の値の組み合わせで設定し"
-"ます。\n"
-"- \"同盟の都市からの空輸を許可する\" (FROM_ALLIES)\n"
-"- \"同盟の都市への空輸を許可する\" (TO_ALLIES)\n"
-"- \"都市から出発するユニット数を制限しない\" (SRC_UNLIMITED) 注：都市からユ"
-"ニットを空輸しても空輸カウンターは減少しなくなりますが、最低1必要なのは変わり"
-"ません。\n"
-"- \"都市に到着するユニット数を制限しない\" (DEST_UNLIMITED) 注：都市へユニッ"
-"トを空輸しても空輸カウンターは減少しなくなりますが、最低1必要なのは変わりませ"
-"ん。"
+"この設定は都市間におけるユニットの空輸に影響します。\n"
+"以下の値を設定することができます。\n"
+"\n"
+"\"同盟国からの空輸を許可\" (FROM_ALLIES)\n"
+"\"同盟国への空輸を許可\" (TO_ALLIES)\n"
+"\"出発ユニット数が無制限\" (SRC_UNLIMITED)\n"
+"\"到着ユニット数が無制限\" (DEST_UNLIMITED)\n"
+"\n"
+"ユニット数を無制限にすると、空輸カウンターが減少しなくなります。\n"
+"ただし、カウンターが0でも空輸が可能かどうかはルールセットによります。"
 
 # clefs
 #: server/settings.c:2638
 msgid "Base chance for diplomats and spies to succeed"
-msgstr "外交官・スパイの基本成功確率"
+msgstr "外交官とスパイの基本成功確率"
 
 #: server/settings.c:2639
 msgid ""
@@ -52979,6 +52979,9 @@ msgid ""
 "do. Non-aggressive missions typically have no base chance at all, but always "
 "success."
 msgstr ""
+"外交官とスパイが実行する攻撃的な任務の基本成功確率と、スパイが任務に成功して帰還する基本確率です。\n"
+"\n"
+"すべての任務に適用されるわけではありません。ユニットに対する買収や破壊工作等には適用されません。通常、攻撃的でない任務は常に成功します。"
 
 #: server/settings.c:2652
 msgid "What kinds of victories are possible"
@@ -53077,10 +53080,9 @@ msgstr "この設定を有効にすると、敵ユニットは交通路を利用
 
 #: server/settings.c:2709
 msgid "Does unreachable unit protect reachable ones"
-msgstr "射程外ユニットによる射程内ユニットの防衛"
+msgstr "射程外のユニットによる防衛"
 
 #: server/settings.c:2710
-#, fuzzy
 #| msgid ""
 #| "This option controls whether tiles with both unreachable and reachable "
 #| "units can be attacked. If disabled, any tile with reachable units can be "
@@ -53093,9 +53095,9 @@ msgid ""
 "units in some rulesets may override this, never protecting reachable units "
 "on their tile."
 msgstr ""
-"このオプションは、射程外ユニットと射程内ユニットの両方がいるタイルを攻撃可能"
-"かどうかを制御します。無効の場合、射程内ユニットがいるタイルは攻撃可能です。"
-"有効の場合、射程外ユニットがいるタイルには攻撃できません。"
+"この設定を有効にすると、射程外のユニットと射程内のユニットとの両方が存在するタイルを攻撃することできなくなります。無効にすると、このようなタイルも攻撃することができます。\n"
+"\n"
+"ルールセットによっては、この設定を上書きし、この設定を有効にしても射程内のユニットを守らない射程外のユニットが存在します。"
 
 #: server/settings.c:2721
 msgid "Turns until player contact is lost"
