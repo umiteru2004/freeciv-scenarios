@@ -811,7 +811,7 @@ msgstr "設定かパーミッションに何か間違いはありませんか？
 msgid ""
 "Freeciv is free software and you are welcome to distribute copies of it "
 "under certain conditions;"
-msgstr "Freecivは無料のソフトウェアであり、条件に従ってそのコピーを配布することを歓迎します。"
+msgstr "Freecivは無料のソフトウェアです。条件に従ってコピーが配布されることを歓迎します。"
 
 #: client/chatline_common.c:183
 msgid "See the \"Copying\" item on the Help menu."
@@ -1869,11 +1869,11 @@ msgstr "相互"
 
 #: client/climisc.c:207
 msgid "?embassy:Yes"
-msgstr "相手国に設立"
+msgstr "相手国に設置"
 
 #: client/climisc.c:210
 msgid "?embassy:With Us"
-msgstr "自国に設立"
+msgstr "自国に設置"
 
 # clefs
 #: client/climisc.c:213
@@ -50899,14 +50899,13 @@ msgstr "ゲーム終了"
 #. TRANS: Description of caravan bonus style setting value.
 #. TRANS: Description of trade revenue style setting value.
 #: server/settings.c:238 server/settings.c:292
-#, fuzzy
 #| msgid "Classic ruleset"
 msgid "Classic Freeciv"
-msgstr "classicルールセット"
+msgstr "デフォルト"
 
 #: server/settings.c:239
 msgid "Log^2 N style"
-msgstr ""
+msgstr "log^2 N"
 
 #: server/settings.c:252
 msgid "Number of tiles"
@@ -50935,7 +50934,7 @@ msgstr "南北をつなげる"
 
 #: server/settings.c:293
 msgid "Proportional to tile trade"
-msgstr ""
+msgstr "タイルが産出する交易ポイントに比例"
 
 #: server/settings.c:305
 msgid "Scenario map"
@@ -51426,17 +51425,16 @@ msgid ""
 "- \"Width and height\" (XYSIZE): Map width and height in tiles (options "
 "'xsize' and 'ysize')."
 msgstr ""
-"マップサイズの定義に使用する方法を選択します。各方法のパラメータは別のオプ"
-"ションで指定します。\n"
-"・\"タイル数\" (FULLSIZE): マップの大きさです(オプション 'size')。\n"
-"・\"プレイヤーごとのタイル数\" (PLAYER): プレイヤー1人あたりの（陸上）タイル"
-"数です(オプション 'tilesperplayer')。\n"
-"・\"幅と高さ\" (XYSIZE): マップの幅およびマップの高さ（単位はタイル数）です"
-"(オプション 'xsize' および 'ysize')。"
+"マップサイズの定義に使用する方法を選択します。\n"
+"各方法のパラメータは別の項目で設定します\n"
+"\n"
+"\"タイル数\" (FULLSIZE)：タイル数で定義します。\n"
+"\"プレイヤーあたりのタイル数\" (PLAYER)：プレイヤー1人あたりの（陸上）タイル数で定義します。\n"
+"\"幅と高さ\" (XYSIZE)：マップの幅と高さのタイル数で定義します。"
 
 #: server/settings.c:1498
 msgid "Map area (in thousands of tiles)"
-msgstr "  マップの大きさ（×1000タイル）"
+msgstr "  タイル数（×1000タイル）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51451,7 +51449,7 @@ msgid ""
 "For this option to take effect, the \"Map size definition\" option "
 "('mapsize') must be set to \"Number of tiles\" (FULLSIZE)."
 msgstr ""
-"この値はマップの大きさを決定するために使用されます。\n"
+"この値はマップサイズを決定するために使用されます。\n"
 "size=4は4,000タイルの通常のマップになります(既定値)。\n"
 "size=20は20,000タイルの巨大なマップになります。\n"
 "このオプションを有効にするには、「マップサイズの定義方法」オプション"
@@ -51459,7 +51457,7 @@ msgstr ""
 
 #: server/settings.c:1514
 msgid "Number of (land) tiles per player"
-msgstr "  プレイヤー1人あたりの(陸上)タイル数"
+msgstr "  プレイヤーあたりのタイル数"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51482,7 +51480,7 @@ msgstr ""
 
 #: server/settings.c:1531
 msgid "Map width in tiles"
-msgstr "  マップの幅(タイル数)"
+msgstr "  マップの幅（タイル数）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51501,7 +51499,7 @@ msgstr ""
 
 #: server/settings.c:1545
 msgid "Map height in tiles"
-msgstr "  マップの高さ(タイル数)"
+msgstr "  マップの高さ（タイル数）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -52498,7 +52496,7 @@ msgstr ""
 
 #: server/settings.c:2292
 msgid "How largely trade distance is relative to world size"
-msgstr ""
+msgstr "交易路の相対的な長さと収入の関係"
 
 #. TRANS: The strings between single quotes are setting names and
 #. * shouldn't be translated.
@@ -52509,6 +52507,9 @@ msgid ""
 "the bonus calculation is relative to world size, and how much only absolute "
 "distance matters."
 msgstr ""
+"交易路からの収入を決定する計算における距離の係数を、マップサイズに対して部分的または完全に相対的なものとすることができます。\n"
+"\n"
+"この値は、収入を決定する計算において、マップサイズに対する交易路の長さの割合と、交易路の長さの絶対値との、どちらがどれだけ重要になるかを設定します。"
 
 #: server/settings.c:2307
 msgid "Minimum distance between cities"
@@ -52552,10 +52553,9 @@ msgid "If turned off, trading cities in the diplomacy dialog is not allowed."
 msgstr "オフにすると、外交ダイアログで都市の授受ができなくなります。"
 
 #: server/settings.c:2341
-#, fuzzy
 #| msgid "Caravan actions"
 msgid "Caravan bonus style"
-msgstr "キャラバン活動"
+msgstr "キャラバンボーナスの計算式"
 
 #: server/settings.c:2342
 msgid ""
@@ -52564,12 +52564,16 @@ msgid ""
 "multipliers for overseas and international destinations. LOGARITHMIC bonuses "
 "are proportional to log^2(distance + trade)."
 msgstr ""
+"交易ユニットが交易を行ったときに得られるボーナスの計算式を選択します。\n"
+"\n"
+"デフォルトの計算式では、交易が行われる2都市間の距離と、この2都市における交易ポイントの産出量に比例し、国や海をまたいだ交易の場合には倍率がかかります。\n"
+"\n"
+"log^2 Nの計算式では、log^2(距離+交易ポイント)に比例します。"
 
 #: server/settings.c:2352
-#, fuzzy
 #| msgid "Trade routes: "
 msgid "Trade revenue style"
-msgstr "交易路: "
+msgstr "交易路収入の計算式"
 
 #: server/settings.c:2353
 msgid ""
@@ -52578,6 +52582,11 @@ msgid ""
 "between them, with multipliers for overseas and international routes. SIMPLE "
 "revenues are proportional to the average trade of the two cities."
 msgstr ""
+"都市が交易路から受け取る収入の計算式を選択します。\n"
+"\n"
+"デフォルトの計算式では、交易が行われる2都市の大きさの合計とその間の距離に比例し、国や海をまたいだ交易の場合には倍率がかかります。\n"
+"\n"
+"「タイルが産出する交易ポイントに比例」では、交易が行われる2都市における交易ポイントの産出量の平均に比例します。"
 
 #: server/settings.c:2364
 msgid "Minimum distance for trade routes"
