@@ -94,7 +94,7 @@
 # "Navigation": 航海術
 #
 # "incident"  : 事変
-# "incite"    : 煽動
+# "incite"    : 扇動
 # "revolt"    : 反乱
 #
 # "zone of control" : ZOC
@@ -2578,7 +2578,7 @@ msgstr "都市の生産物"
 #: client/gui-sdl2/action_dialog.c:1678 client/gui-sdl3/action_dialog.c:1678
 #, c-format
 msgid "You can't incite a revolt in %s."
-msgstr "%sでは反乱は煽動できません。"
+msgstr "%sでは反乱は扇動できません。"
 
 # clefs
 #: client/gui-gtk-3.22/action_dialog.c:982
@@ -2586,7 +2586,7 @@ msgstr "%sでは反乱は煽動できません。"
 #: client/gui-gtk-5.0/action_dialog.c:979 client/gui-sdl2/action_dialog.c:1689
 #: client/gui-sdl3/action_dialog.c:1689
 msgid "City can't be incited!"
-msgstr "煽動できない都市です！"
+msgstr "扇動できない都市です！"
 
 #. TRANS: %s is pre-pluralised "Treasury contains %d gold."
 #: client/gui-gtk-3.22/action_dialog.c:988
@@ -2624,7 +2624,7 @@ msgid_plural ""
 "Inciting a revolt costs %d gold.\n"
 "%s"
 msgstr[0] ""
-"反乱煽動にかかるコストは金%dです。\n"
+"反乱扇動にかかるコストは金%dです。\n"
 "%s"
 
 #: client/gui-gtk-3.22/action_dialog.c:1068
@@ -9509,7 +9509,7 @@ msgstr "科学技術を盗む"
 
 #: client/gui-qt/menu.cpp:1496
 msgid "Incite a revolt"
-msgstr "反乱の煽動"
+msgstr "反乱の扇動"
 
 #: client/gui-qt/menu.cpp:1503
 #, fuzzy
@@ -18040,7 +18040,7 @@ msgstr "反乱を煽る"
 #: data/civ2civ3/actions.ruleset:266 data/multiplayer/actions.ruleset:254
 #, c-format
 msgid "Incite a Re%svolt and Escape%s"
-msgstr "反乱を煽動して脱出(%sV)"
+msgstr "反乱を扇動して脱出(%sV)"
 
 #. TRANS: Establish _Embassy (100% chance of success).
 #: common/actions.c:6096 data/civ2/actions.ruleset:253
@@ -19052,7 +19052,7 @@ msgstr "失敗"
 
 #: common/events.c:123 common/events.c:133
 msgid "Incite"
-msgstr "煽動"
+msgstr "扇動"
 
 #: common/events.c:124 common/events.c:134
 msgid "Poison"
@@ -23944,7 +23944,7 @@ msgstr "ユニットを買収する(%sB) %s"
 #: data/multiplayer/actions.ruleset:251
 #, c-format
 msgid "Incite a %sRevolt%s"
-msgstr "反乱の煽動(%sR)%s"
+msgstr "反乱の扇動(%sR)%s"
 
 #. TRANS: _Build City (100% chance of success).
 #: data/civ1/actions.ruleset:245 data/civ2/actions.ruleset:289
@@ -24332,8 +24332,8 @@ msgid ""
 "enemy agents try to evade your own agents stationed in the city, or sabotage "
 "your buildings."
 msgstr ""
-"他国の外交官が反乱の煽動を試みる際、その費用は政治体制に関わらず、首都からの"
-"距離に比例して減少します。首都では反乱を煽動できません。加えて敵の外交官から"
+"他国の外交官が反乱の扇動を試みる際、その費用は政治体制に関わらず、首都からの"
+"距離に比例して減少します。首都では反乱を扇動できません。加えて敵の外交官から"
 "の破壊工作および駐在する味方外交官との諜報戦において有利なボーナスが得られま"
 "す。"
 
@@ -25278,7 +25278,7 @@ msgid ""
 "Diplomats and Spies."
 msgstr ""
 "民主主義の(幸福な)市民は政府を強く信じているので、その忠誠心は変わりません。"
-"民主政文明の軍隊は買収されません。敵外交官やスパイは都市の反乱の煽動はできま"
+"民主政文明の軍隊は買収されません。敵外交官やスパイは都市の反乱の扇動はできま"
 "せん。"
 
 # clefs
@@ -27853,12 +27853,12 @@ msgid ""
 "any city governed by a democracy. Incitement may be attempted in peacetime, "
 "but will cause a diplomatic incident."
 msgstr ""
-"・「反乱の煽動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
+"・「反乱の扇動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
 "編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属するユニッ"
 "トも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せず、相手国"
 "のユニットとして残ります。都市外にいる所属ユニットは失われ、どちらのプレイ"
 "ヤーのものにもなりません。必要な経費は都市および都市を所有する文明のステータ"
-"スによって決まります。首都および民主主義体制下の都市では反乱を煽動することは"
+"スによって決まります。首都および民主主義体制下の都市では反乱を扇動することは"
 "できません。平時においても試みることができますが、事変を引き起こします。"
 
 #: data/civ1/units.ruleset:1495 data/civ2/units.ruleset:2288
@@ -28141,7 +28141,7 @@ msgid ""
 "of the city 4 times bigger. (These effects are redundant in your capital "
 "city.)"
 msgstr ""
-"都市の汚職を50%減らします。また他国の外交官が都市の反乱を煽動するとき、その費"
+"都市の汚職を50%減らします。また他国の外交官が都市の反乱を扇動するとき、その費"
 "用を4倍に増加させます。ただし首都ではこれらの効果は発揮されません。"
 
 #: data/civ2/buildings.ruleset:389 data/classic/buildings.ruleset:396
@@ -28239,8 +28239,8 @@ msgid ""
 "enjoys a bonus when enemy agents try to evade your own agents stationed in "
 "the city, or sabotage your buildings."
 msgstr ""
-"外交官・スパイが都市の反乱を煽動する際、必要な費用は政治体制に関わらず、その"
-"プレイヤーの首都からの距離に比例して減少します。首都では反乱を煽動できませ"
+"外交官・スパイが都市の反乱を扇動する際、必要な費用は政治体制に関わらず、その"
+"プレイヤーの首都からの距離に比例して減少します。首都では反乱を扇動できませ"
 "ん。加えて敵の外交官・スパイからの破壊工作および駐在する味方外交官との諜報戦"
 "において有利なボーナスが得られます。"
 
@@ -30001,7 +30001,7 @@ msgid ""
 "A Spy that survives the more aggressive actions (sabotage, theft, inciting "
 "rebellion, and poisoning) escapes to the safety of the nearest friendly city."
 msgstr ""
-"攻撃性の高い活動（破壊工作、科学技術の窃取、反乱の煽動、水源への毒物混入）を"
+"攻撃性の高い活動（破壊工作、科学技術の窃取、反乱の扇動、水源への毒物混入）を"
 "成功させ脱出したスパイは、安全のため最も近い友好的な都市に逃れます。"
 
 #: data/civ2/units.ruleset:2354
@@ -30283,7 +30283,7 @@ msgid ""
 "Reduces the corruption in a city by 50%, and makes the revolt cost of the "
 "city 4 times bigger. (These effects are redundant in your capital city.)"
 msgstr ""
-"都市の汚職を50%減らします。また他国の外交官が都市の反乱を煽動するとき、その費"
+"都市の汚職を50%減らします。また他国の外交官が都市の反乱を扇動するとき、その費"
 "用を4倍に増加させます。ただし首都ではこれらの効果は発揮されません。"
 
 #: data/classic/buildings.ruleset:502 data/multiplayer/buildings.ruleset:500
@@ -31497,7 +31497,7 @@ msgstr ""
 #, fuzzy
 #| msgid "* Your cities cannot be incited to revolt.\n"
 msgid "A city with a Courthouse cannot be incited to revolt."
-msgstr "・各都市は反乱を煽動されません。\n"
+msgstr "・各都市は反乱を扇動されません。\n"
 
 #: data/sandbox/buildings.ruleset:520 data/civ2civ3/buildings.ruleset:517
 #, no-c-format
@@ -31703,7 +31703,7 @@ msgid ""
 "enjoys a bonus when enemy agents try to evade your own agents stationed in "
 "the city, or sabotage your buildings."
 msgstr ""
-"また総主教庁の置かれた都市で、反乱を煽動することはできません。加えて敵の外交"
+"また総主教庁の置かれた都市で、反乱を扇動することはできません。加えて敵の外交"
 "官からの破壊工作および駐在する味方外交官との諜報戦において有利なボーナスが得"
 "られます。"
 
@@ -32186,7 +32186,7 @@ msgid ""
 "Also, none of the owner's cities can be incited to revolt."
 msgstr ""
 "城壁と裁判所がそれぞれ1人の不幸市民を平静にできるようになります(戦闘ユニット"
-"が原因の者は除きます)。また全ての都市で反乱の煽動を防ぎます。"
+"が原因の者は除きます)。また全ての都市で反乱の扇動を防ぎます。"
 
 #: data/sandbox/buildings.ruleset:2142 data/civ2civ3/buildings.ruleset:1987
 msgid "Statue of Zeus"
@@ -34610,12 +34610,12 @@ msgid ""
 "any city with Courthouse. Incitement may be attempted in peacetime, but will "
 "cause a diplomatic incident."
 msgstr ""
-"・「反乱の煽動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
+"・「反乱の扇動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
 "編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属するユニッ"
 "トも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せず、相手国"
 "のユニットとして残ります。都市外にいる所属ユニットは失われ、どちらのプレイ"
 "ヤーのものにもなりません。必要な経費は都市および都市を所有する文明のステータ"
-"スによって決まります。首都および民主主義体制下の都市では反乱を煽動することは"
+"スによって決まります。首都および民主主義体制下の都市では反乱を扇動することは"
 "できません。平時においても試みることができますが、事変を引き起こします。"
 
 #: data/sandbox/units.ruleset:2678 data/civ2civ3/units.ruleset:2504
@@ -38378,7 +38378,7 @@ msgstr ""
 "外国籍の市民は他の市民たちと同じように労働し、ほとんどの点で行動に違いはあり"
 "ません。しかし彼らの本国と敵対した場合は、不幸市民になることがあります。また"
 "外国籍の市民が暮らす都市に対して、彼らの本国が差し向けた工作員は、より低い費"
-"用で反乱を煽動することができます。サーバーオプションで移民が有効であれば、彼"
+"用で反乱を扇動することができます。サーバーオプションで移民が有効であれば、彼"
 "らは母国へ移住する傾向が強まります。ルールセットの設定によっては、外国籍の市"
 "民は時間が経つにつれて現在住んでいる国に同化してゆきます。"
 
@@ -38486,7 +38486,7 @@ msgid ""
 msgstr ""
 "もしある都市で不幸市民が幸福市民よりも多くなると、その都市で暴動が発生しま"
 "す。贅沢ポイントは産出されるものの、食料・生産・科学の産出量は0ptとなり、税収"
-"も得られません。また都市は敵の工作員によって反乱を煽動されやすくなります。さ"
+"も得られません。また都市は敵の工作員によって反乱を扇動されやすくなります。さ"
 "らに政治体制によっては、この状態が長く続くと全国的な動乱に発展し、政府が崩壊"
 "することもあります。"
 
@@ -48579,26 +48579,26 @@ msgstr[0] ""
 #: server/diplomats.c:1173
 #, c-format
 msgid "You don't have enough gold to subvert %s."
-msgstr "%sを煽動転覆するのに十分なお金がありません。"
+msgstr "%sを扇動転覆するのに十分なお金がありません。"
 
 # yasu
 # 「革命」か「反逆」か? (clefs)
 #: server/diplomats.c:1195
 #, c-format
 msgid "Your %s was caught in the attempt of inciting a revolt!"
-msgstr "あなたの%sは反乱を煽動しようとした疑いで逮捕されました。"
+msgstr "あなたの%sは反乱を扇動しようとした疑いで逮捕されました。"
 
 # yasu, ama
 #: server/diplomats.c:1199
 #, c-format
 msgid "You caught %s %s attempting to incite a revolt in %s!"
-msgstr "%3$sで%1$sの%2$sを反乱煽動の容疑で逮捕しました。"
+msgstr "%3$sで%1$sの%2$sを反乱扇動の容疑で逮捕しました。"
 
 # yasu, clefs
 #: server/diplomats.c:1229
 #, c-format
 msgid "Revolt incited in %s, you now rule the city!"
-msgstr "%sで反乱が煽動され、今やあなたが都市の実権を握っています！"
+msgstr "%sで反乱が扇動され、今やあなたが都市の実権を握っています！"
 
 # yasu
 #: server/diplomats.c:1232
@@ -48715,7 +48715,7 @@ msgstr "%1$sが%3$sから金%2$dを盗んだとみられます。"
 #: server/diplomats.c:1880
 #, c-format
 msgid "Your %s was caught in an attempt of hiding a nuke in %s!"
-msgstr "%sは反乱を煽動しようとした疑いで逮捕されました。"
+msgstr "%sは反乱を扇動しようとした疑いで逮捕されました。"
 
 #: server/diplomats.c:1886
 #, c-format
@@ -52206,7 +52206,7 @@ msgstr ""
 # clefs
 #: server/settings.c:2073
 msgid "Technology cost multiplier percentage"
-msgstr "科学技術研究コストの係数(%)"
+msgstr "科学技術研究コストの係数 (%)"
 
 # clefs
 #: server/settings.c:2074
@@ -52216,7 +52216,7 @@ msgid ""
 "determined by the ruleset or other game settings."
 msgstr ""
 "これは、新しい科学技術をどのぐらい早く発見できるかに影響します。すべての科学"
-"技術のコストにはこの係数(%)がかけられます。係数をかける前の基本コストはルール"
+"技術のコストにはこの係数 (%)がかけられます。係数をかける前の基本コストはルール"
 "セットや他の設定により決定されます。"
 
 #: server/settings.c:2083
@@ -52230,10 +52230,13 @@ msgid ""
 "never transferred to new technology. Techpenalty options are ineffective "
 "after enabling that option."
 msgstr ""
+"この設定を有効にすると、研究中の科学技術に研究ポイントを残したまま、別の科学技術の研究を始めることができます。研究ポイントが新しい科学技術の研究に移行されることはありません。\n"
+"\n"
+"この設定を有効にすると、ゲーム設定「科学技術変更時のペナルティ」は効果がありません。"
 
 #: server/settings.c:2092
 msgid "Percentage penalty when changing tech"
-msgstr "科学技術を変更したときに受けるペナルティーの割合"
+msgstr "科学技術変更時のペナルティ"
 
 #: server/settings.c:2093
 msgid ""
@@ -52247,7 +52250,7 @@ msgstr ""
 
 #: server/settings.c:2102
 msgid "Chance to lose a technology while receiving it"
-msgstr "科学技術を受け取る際に失われる確率(%)"
+msgstr "科学技術を受け取る際に失われる確率 (%)"
 
 #: server/settings.c:2103
 msgid "The chance that learning a technology by treaty or theft will fail."
@@ -52257,7 +52260,7 @@ msgstr ""
 
 #: server/settings.c:2110
 msgid "Chance to lose a technology while giving it"
-msgstr "科学技術を与える際に失われる確率(%)"
+msgstr "科学技術を与える際に失われる確率 (%)"
 
 #: server/settings.c:2111
 msgid ""
@@ -52269,7 +52272,7 @@ msgstr ""
 
 #: server/settings.c:2119
 msgid "Tech leakage percent"
-msgstr ""
+msgstr "科学技術の漏洩率"
 
 #: server/settings.c:2120
 msgid ""
@@ -52277,6 +52280,9 @@ msgid ""
 "who know the tech tell which percentage of tech's bulb cost gets leaked each "
 "turn. This setting has no effect if the ruleset has disabled tech leakage."
 msgstr ""
+"この値に、当該科学技術を獲得しているプレイヤーの割合を掛けた値の割合だけ、その科学技術を新しく研究するのに必要な研究ポイントが減少します。\n"
+"\n"
+"ルールセットが科学技術の漏洩を無効にしている場合、この設定は効果がありません。"
 
 #: server/settings.c:2130
 msgid "Team pooled research"
@@ -52287,13 +52293,12 @@ msgid ""
 "If this setting is turned on, then the team mates will share the science "
 "research. Else, every player of the team will have to make its own."
 msgstr ""
-"この設定がオンになっている場合は、チームが科学技術研究を共有します。オフの場"
-"合、プレイヤーはそれぞれ独自に研究する必要があります。"
+"この設定を有効にすると、チームメンバーは科学技術を共同で研究します。\n"
+"無効にすると、プレイヤーはそれぞれ独自に研究します。"
 
-# clefs
 #: server/settings.c:2138
 msgid "Penalty when getting tech from treaty"
-msgstr "条約により科学技術を得たときのペナルティー"
+msgstr "条約により科学技術を得たときのペナルティ"
 
 #: server/settings.c:2139
 msgid ""
@@ -52306,10 +52311,9 @@ msgstr ""
 "トを失います。この値が0以外の場合、研究ポイントがマイナスになることもありま"
 "す。"
 
-# clefs
 #: server/settings.c:2148
 msgid "Penalty when getting gold from treaty"
-msgstr "条約により金を得たときのペナルティー"
+msgstr "条約により金を得たときのペナルティ"
 
 #: server/settings.c:2149
 msgid ""
@@ -52322,18 +52326,18 @@ msgstr ""
 
 #: server/settings.c:2157
 msgid "Probability of gold loss during inciting revolt"
-msgstr ""
+msgstr "反乱扇動時に金を失う確率"
 
 #: server/settings.c:2158
 msgid ""
 "When unit trying to incite revolt is eliminated, half of the gold (or "
 "quarter, if unit was caught), prepared to bribe citizens, can be lost or "
 "captured by enemy."
-msgstr ""
+msgstr "反乱を扇動しようとしたユニットが排除された場合、市民に賄賂として用意された金の半分（ユニットが逮捕された場合は4分の1）を失うか、敵に奪われることがあります。"
 
 #: server/settings.c:2167
 msgid "Probability of gold capture during inciting revolt"
-msgstr ""
+msgstr "反乱扇動時に金が奪われる確率"
 
 #: server/settings.c:2168
 msgid ""
@@ -52341,11 +52345,11 @@ msgid ""
 "chance that this gold would be captured by city defender. Transfer tax would "
 "be applied, though. This setting is irrevelant, if incite_gold_loss_chance "
 "is zero."
-msgstr ""
+msgstr "反乱を扇動しようとしたユニットが排除され、金を失った場合、この金は反乱を防いだ敵に奪われることがあります。ただし、ゲーム設定「条約により金を得たときのペナルティ」が適用されます。ゲーム設定「反乱扇動時に金を失う確率」が0である場合、この設定は効果がありません。"
 
 #: server/settings.c:2178
 msgid "Penalty when getting tech from conquering"
-msgstr "征服により科学技術を得た時のペナルティー"
+msgstr "征服により科学技術を得た時のペナルティ"
 
 #: server/settings.c:2179
 msgid ""
@@ -52358,10 +52362,9 @@ msgstr ""
 "イントを失います。この値が0以外の場合、研究ポイントがマイナスになることもあり"
 "ます。"
 
-# Belgae
 #: server/settings.c:2189
 msgid "Penalty when getting a free tech"
-msgstr "無償で科学技術を得た時のペナルティー"
+msgstr "無償で科学技術を得た時のペナルティ"
 
 #. TRANS: The strings between single quotes are setting names and
 #. * shouldn't be translated.
@@ -52381,7 +52384,7 @@ msgstr ""
 
 #: server/settings.c:2203
 msgid "Research point debt threshold for losing tech"
-msgstr "負の研究ポイントにより科学技術が失われる閾値(%)"
+msgstr "負の研究ポイントにより科学技術が失われる閾値 (%)"
 
 #: server/settings.c:2204
 msgid ""
@@ -52398,7 +52401,7 @@ msgstr ""
 
 #: server/settings.c:2215
 msgid "Research points restored after losing a tech"
-msgstr "科学技術を失った後に受け取る研究ポイントの割合(%)"
+msgstr "科学技術を失った後に受け取る研究ポイントの割合 (%)"
 
 #: server/settings.c:2216
 msgid ""
@@ -53040,10 +53043,9 @@ msgstr ""
 
 #: server/settings.c:2681
 msgid "Percentage to multiply spaceship travel time by"
-msgstr ""
+msgstr "宇宙船の移動時間の係数 (%)"
 
 #: server/settings.c:2682
-#, fuzzy
 #| msgid ""
 #| "If this option is turned on, the game will end with the arrival of a "
 #| "spaceship at Alpha Centauri."
@@ -53051,8 +53053,7 @@ msgid ""
 "This percentage is multiplied onto the time it will take for a spaceship to "
 "arrive at Alpha Centauri."
 msgstr ""
-"このオプションをオンにした場合、アルファ・ケンタウリに宇宙船が到達した時点で"
-"ゲームは終了します。"
+"この値は百分率で、宇宙船がアルファ・ケンタウリに移動する時間が、デフォルトの場合と比較してどれほど異なるかを示します。"
 
 #: server/settings.c:2690
 msgid "Minimum number of cities for civil war"
@@ -58777,7 +58778,7 @@ msgstr ""
 #~ "bigger."
 #~ msgstr ""
 #~ "裁判所はまた、1人の不幸市民を平静にします（ただし戦闘ユニットが原因の者に"
-#~ "は効果がありません）。加えて敵の外交官による反乱の煽動に対し、その費用を4"
+#~ "は効果がありません）。加えて敵の外交官による反乱の扇動に対し、その費用を4"
 #~ "倍に増加させます。"
 
 #~ msgid "Allows Workers and Engineers to build airstrips, airbases and buoys."
@@ -58823,13 +58824,13 @@ msgstr ""
 #~ "capital, or in any city governed by a Federation or Democracy. Incitement "
 #~ "may be attempted in peacetime, but will cause a diplomatic incident."
 #~ msgstr ""
-#~ "・「反乱の煽動」:ある程度の資金を投入し、敵国の都市を離叛させ、あなたの帝"
+#~ "・「反乱の扇動」:ある程度の資金を投入し、敵国の都市を離叛させ、あなたの帝"
 #~ "国に編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属す"
 #~ "るユニットも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せ"
 #~ "ず、敵国のユニットとして残ります。都市の外にいる所属ユニットは失われ、どち"
 #~ "らのプレイヤーのものにもなりません。必要な経費は都市および都市を所有する文"
 #~ "明のステータスによって決まります。首都と、民主主義および連邦制国家の全都市"
-#~ "では反乱を煽動することができません。平時においても試みることができますが、"
+#~ "では反乱を扇動することができません。平時においても試みることができますが、"
 #~ "事変を引き起こします。"
 
 #~ msgid "Clean fallout"
@@ -60270,7 +60271,7 @@ msgstr ""
 #~ msgstr "%sはあなたから技術を盗もうとして事変を引き起こしました。"
 
 #~ msgid "You have caused an incident while inciting a revolt in %s."
-#~ msgstr "%sで反乱を煽動する試みは事変に発展しました。"
+#~ msgstr "%sで反乱を扇動する試みは事変に発展しました。"
 
 #~ msgid "You have caused an incident while stealing gold from %s."
 #~ msgstr "%sから金を盗む試みは事変に発展しました。"
@@ -60764,7 +60765,7 @@ msgstr ""
 #~ msgstr "科学技術を盗む(_T)"
 
 #~ msgid "Incite a _Revolt"
-#~ msgstr "反乱の煽動(_R)"
+#~ msgstr "反乱の扇動(_R)"
 
 #~ msgid "Industrial _Sabotage"
 #~ msgstr "破壊工作(_S)"
@@ -61106,7 +61107,7 @@ msgstr ""
 #~ msgstr "%sは買収できません！"
 
 #~ msgid "You can't subvert this city."
-#~ msgstr "この都市は煽動転覆できません。"
+#~ msgstr "この都市は扇動転覆できません。"
 
 #~ msgid ""
 #~ "Cannot modify specials for the tile %s because %d is not a valid terrain "
@@ -61839,7 +61840,7 @@ msgstr ""
 #~ "the capital, for the purpose of calculating revolt cost."
 #~ msgstr ""
 #~ "都市での汚職を50%減らします。民主主義下では、不幸市民1を平静にします。ま"
-#~ "た、反乱煽動費用を計算する際に、首都からの距離を実際の半分と見なします。"
+#~ "た、反乱扇動費用を計算する際に、首都からの距離を実際の半分と見なします。"
 
 #~ msgid ""
 #~ "Reduces the corruption and waste in a city by 50%.  Under a Democracy, a "
@@ -61848,7 +61849,7 @@ msgstr ""
 #~ "the capital, for the purpose of calculating revolt cost."
 #~ msgstr ""
 #~ "都市での汚職と浪費を50%減らします。民主主義下では、不幸市民1を平静にします"
-#~ "（軍事活動にともなう不幸市民には効果がありません）。また、反乱煽動費用を計"
+#~ "（軍事活動にともなう不幸市民には効果がありません）。また、反乱扇動費用を計"
 #~ "算する際に、首都からの距離を実際の半分と見なします。"
 
 #~ msgid "Default ruleset"
