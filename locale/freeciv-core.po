@@ -23758,7 +23758,7 @@ msgstr "作業を行うことができる"
 #, c-format
 #| msgid "Freeciv version %s (%s)"
 msgid "Freeciv version %s %s (%s)"
-msgstr "Freeciv Ver.%s %s (%s)"
+msgstr "Freeciv v%s %s (%s)"
 
 #: common/version.c:42 common/version.c:46
 msgid "(beta version)"
@@ -23767,17 +23767,17 @@ msgstr "(ベータ版)"
 #: common/version.c:45
 #, c-format
 msgid "Freeciv version %s %s"
-msgstr "Freeciv Ver.%s %s"
+msgstr "Freeciv v%s %s"
 
 #: common/version.c:49
 #, c-format
 msgid "Freeciv version %s (%s)"
-msgstr "Freeciv Ver.%s (%s)"
+msgstr "Freeciv v%s (%s)"
 
 #: common/version.c:52
 #, c-format
 msgid "Freeciv version %s"
-msgstr "Freeciv Ver.%s"
+msgstr "Freeciv v%s"
 
 #: common/version.c:65
 msgid "betatest version "
@@ -48031,12 +48031,12 @@ msgstr "ようこそ %s"
 #: server/connecthand.c:172
 #, c-format
 msgid "Welcome to the %s Server running at %s port %d."
-msgstr "%sサーバーにようこそ。\nこのサーバーは、%s:%dで実行中です。"
+msgstr "%sサーバーにようこそ。\nこのサーバーは、%s:%dで実行されています。"
 
 #: server/connecthand.c:176
 #, c-format
 msgid "Welcome to the %s Server at port %d."
-msgstr "%sサーバーにようこそ。\nこのサーバーは、%d番ポートで実行中です。"
+msgstr "%sサーバーにようこそ。\nこのサーバーは、%d番ポートで実行されています。"
 
 #: server/connecthand.c:184 server/connecthand.c:331
 #, c-format
@@ -51930,10 +51930,9 @@ msgstr "この値は、核の冬が発生する確率の蓄積速度を変化さ
 
 #: server/settings.c:1855
 msgid "Map generation random seed"
-msgstr "マップ生成用のランダムシード"
+msgstr "マップのシード値"
 
 #: server/settings.c:1856
-#, fuzzy
 #| msgid ""
 #| "The same seed will always produce the same map; for zero (the default) a "
 #| "seed will be chosen based on the time to give a random map."
@@ -51942,21 +51941,19 @@ msgid ""
 "seed will be generated randomly, based on gameseed. If also gameseed is "
 "zero, the map will be completely random."
 msgstr ""
-"シード値が同じであれば、必ず同じマップが作成されます。0(既定値)の場合は時刻を"
-"基にシード値を選択するので、ランダムなマップが生成されます。"
+"マップのシード値が同じであれば、生成されるマップも同じになります。0（デフォルト）の場合、ゲームのシード値に基づいてランダムにマップのシード値が生成されます。ゲームのシード値も0の場合、マップは完全にランダムになります。"
 
 #: server/settings.c:1875
 msgid "Game random seed"
-msgstr "ゲームで使用するランダムシード"
+msgstr "ゲームのシード値"
 
 #: server/settings.c:1876
-#, fuzzy
 #| msgid ""
 #| "For zero (the default) a seed will be chosen based on the current time."
 msgid ""
 "For zero (the default) a seed will be chosen based on system entropy or, "
 "failing that, the current time."
-msgstr "0(既定値)の場合、シード値は現在時刻を基に選択されます。"
+msgstr "0（デフォルト）の場合、ゲームのシード値はシステムエントロピーを元に生成され、それができない場合は現在時刻を元に生成されます。"
 
 #: server/settings.c:1883
 msgid "Amount of \"special\" resource tiles"
@@ -52996,7 +52993,6 @@ msgstr "勝利条件"
 #. * strings between parentheses and in uppercase must stay as
 #. * untranslated.
 #: server/settings.c:2658
-#, fuzzy
 #| msgid ""
 #| "This setting controls how game can be won. One can always win by "
 #| "conquering entire planet, but other victory conditions can be enabled or "
@@ -53019,15 +53015,30 @@ msgid ""
 "- \"World Peace\" (WORLDPEACE): There's no wars in the world for the "
 "specified amount of turns.\n"
 msgstr ""
-"ゲームの勝者を決定する方法を設定します。他の全ての文明を滅ぼし、世界征服を果"
-"たしたプレイヤーは必ず勝利しますが(｢征服勝利｣)、それ以外の勝利条件を有効また"
-"は無効にすることができます。 :\n"
-"- \"科学勝利\" (SPACERACE): 建造した宇宙船を打ち上げ、アルファ・ケンタウリへ"
-"と到達させる。\n"
-"- \"同盟勝利\" (ALLIED): 敵国を全て滅ぼし、同盟を結んだプレイヤーだけが生き残"
-"る。\n"
-"- \"文化勝利\" (CULTURE): ルールセットが定義する基準 (最低値および2位との差) "
-"を満たす文化を生み出す。\n"
+"世界征服を果たせば必ず勝利しますが、他の勝利条件を設定することもできます。\n"
+"\n"
+"- 科学勝利 (SPACERACE)：宇宙船を建造し、アルファ・ケンタウリに到達させる。\n"
+"- 同盟勝利 (ALLIED)：同盟の関係にない民族をすべて征服する。\n"
+"- 文化勝利 (CULTURE)：ルールセットが定義する基準を満たす文化ポイントを生み出す。\n"
+"- 平和勝利 (WORLDPEACE)：指定されたターンの間、世界で戦争が起こらない。\n"
+
+# NOTE: 手動で追加した項目
+msgid ""
+"This setting controls how game can be won. One can always win by "
+"conquering entire planet, but other victory conditions can be enabled or "
+"disabled:\n"
+"- \"Spacerace\" (SPACERACE): Spaceship is built and travels to Alpha "
+"Centauri.\n"
+"- \"Allied\" (ALLIED): After defeating enemies, all remaining players are "
+"allied.\n"
+"- \"Culture\" (CULTURE): Player meets ruleset defined cultural domination "
+"criteria.\n"
+msgstr ""
+"世界征服を果たせば必ず勝利しますが、他の勝利条件を設定することもできます。\n"
+"\n"
+"- 科学勝利 (SPACERACE)：宇宙船を建造し、アルファ・ケンタウリに到達させる。\n"
+"- 同盟勝利 (ALLIED)：同盟の関係にない民族をすべて征服する。\n"
+"- 文化勝利 (CULTURE)：ルールセットが定義する基準を満たす文化ポイントを生み出す。\n"
 
 #: server/settings.c:2673
 msgid "Should the game end if the spaceship arrives?"
@@ -53392,14 +53403,13 @@ msgstr ""
 
 #: server/settings.c:2937
 msgid "Maximum seconds per turn"
-msgstr "ターンの最大秒数"
+msgstr "ターンの制限時間"
 
 #. TRANS: \"Turn Done\" refers to the client button; it is also
 #. * translated separately, the translation should be the same.
 #. * \"timeoutincrease\" is a command name and must not to be
 #. * translated.
 #: server/settings.c:2942
-#, fuzzy
 msgid ""
 "If all players have not hit \"Turn Done\" before this time is up, then the "
 "turn ends automatically. Zero means there is no timeout. In servers compiled "
@@ -53409,12 +53419,11 @@ msgid ""
 "timer. The first turn is treated as a special case and is controlled by the "
 "'first_timeout' setting."
 msgstr ""
-"プレイヤー全員が「ターン終了」せずとも、この時間が経過した時点で自動的にター"
-"ンが終了します。0は制限時間なしを意味します。デバッグサーバーでは、タイムアウ"
-"トを-1にセットすると、autogameテストモードになります。制限時間を30秒未満に設"
-"定することができるのは、アクセスレベルhackで接続しているユーザーのみです。こ"
-"の変数とコマンド \"timeoutincrease\" を併用して動的なタイマー制御を実現できま"
-"す。最初のターンだけは例外で、'first_timeout'設定に従います。"
+"この値（秒）の時間が経過するまでにすべてのプレイヤーが「ターン終了」を押さなければ、そのターンは自動的に終了します。最初のターンの制限時間は個別に設定することができます。\n"
+"\n"
+"この値が0のとき、ターンに制限時間はありません。また、デバッグ用にコンパイルされたサーバーでは、この値が-1のとき、自動ゲームのテストモードになります。\n"
+"\n"
+"ハックレベルのアクセス権を持つユーザーのみがこの値を30未満にすることができます。また、この値と\"timeoutincrease\"コマンドを一緒に使用することで、動的な制限時間を設定することができます。"
 
 #: server/settings.c:2956
 msgid "First turn timeout"
@@ -53423,17 +53432,15 @@ msgstr "最初のターンの制限時間"
 #. TRANS: The strings between single quotes are setting names and
 #. * should not be translated.
 #: server/settings.c:2959
-#, fuzzy
 msgid ""
 "If greater than 0, T1 will last for 'first_timeout' seconds.\n"
 "If set to 0, T1 will not have a timeout.\n"
 "If set to -1, the special treatment of T1 will be disabled.\n"
 "See also 'timeout'."
 msgstr ""
-"値が1以上のとき、最初のターン（T0）の制限時間がその秒数になります。\n"
-"0のときは、最初のターンは制限時間なしとなります。\n"
-"-1のときは、最初のターンも'timeout'設定の例外とはせず、そちらの設定に従いま"
-"す。"
+"この値が0より大きいとき、最初のターンの制限時間はこの値（秒）です。\n"
+"0のとき、最初のターンに制限時間はありません。\n"
+"-1のとき、最初のターンの制限時間は、以降のターンの制限時間と同じになります。"
 
 #: server/settings.c:2969
 msgid "Timeout at least n seconds when enemy moved"
@@ -53692,9 +53699,8 @@ msgstr ""
 "- \"指定時間ごと\" (TIMER) : 'savefrequency' で設定された時間ごと。"
 
 #: server/settings.c:3150
-#, fuzzy
 msgid "Whether to do saving in separate thread"
-msgstr "極地を大陸から離す"
+msgstr "別スレッドで保存"
 
 #. TRANS: The string between single quotes is a setting name and
 #. * should not be translated.
@@ -53703,7 +53709,7 @@ msgid ""
 "If this is turned in, compressing and saving the actual file containing the "
 "game situation takes place in the background while game otherwise continues. "
 "This way users are not required to wait for the save to finish."
-msgstr ""
+msgstr "この設定を有効にすると、セーブファイルがバックグラウンドで作成されます。これにより、ゲームを保存するときにプレイが中断されません。"
 
 #: server/settings.c:3161
 msgid "Savegame compression level"
@@ -53838,22 +53844,16 @@ msgid ""
 msgstr ""
 
 #: server/settings.c:3264
-#, fuzzy
 msgid "Metaserver info line"
-msgstr "公開サーバー情報行を設定します。"
+msgstr "公開サーバーの情報ライン"
 
 #: server/settings.c:3265
-#, fuzzy
 msgid ""
 "User defined metaserver info line. For most of the time a user defined "
 "metamessage will be used instead of an automatically generated message. Set "
 "to empty (\"\", not \"empty\") to always use an automatically generated meta "
 "server message."
-msgstr ""
-"ユーザー定義の公開サーバー情報行を設定します。パラメータを省略した場合は、以"
-"前に設定されたメタメッセージが削除されます。ほとんどの状況において、ユーザー"
-"定義のメタメッセージが（使用できるところで）自動生成メッセージに代わって使用"
-"されます。"
+msgstr "ユーザーが定義する公開サーバーの情報ライン。ほとんどの場合、自動生成されたメッセージではなく、ユーザーに定義されたメッセージが使用されます。常に自動生成されたメッセージを使用するには、この値を空にします。"
 
 #: server/settings.c:3274
 msgid "Level of new AIs"
