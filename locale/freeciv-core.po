@@ -5060,7 +5060,7 @@ msgstr "Freeciv"
 #: client/gui-gtk-3.22/gui_main.c:892 client/gui-gtk-4.0/gui_main.c:871
 #: client/gui-gtk-5.0/gui_main.c:872
 msgid "Detach/Attach the pane."
-msgstr ""
+msgstr "ペインの取り付け/取り外し"
 
 #: client/gui-gtk-3.22/gui_main.c:1137 client/gui-gtk-4.0/gui_main.c:1066
 #: client/gui-gtk-5.0/gui_main.c:1067 client/gui-qt/sidebar.cpp:663
@@ -5082,7 +5082,7 @@ msgstr "ターン終了"
 #: client/gui-sdl2/mapctrl.c:1690 client/gui-sdl2/mapview.c:947
 #: client/gui-sdl3/mapctrl.c:1686 client/gui-sdl3/mapview.c:943
 msgid "Shift+Return"
-msgstr "Shift+Return"
+msgstr "Shift+Enter"
 
 #: client/gui-gtk-3.22/gui_main.c:1519 client/gui-gtk-4.0/gui_main.c:1453
 #: client/gui-gtk-5.0/gui_main.c:1454 client/gui-qt/menu.cpp:1539
@@ -5731,11 +5731,10 @@ msgstr ""
 msgid " (observer)"
 msgstr " (観察者)"
 
-# clefs
 #: client/gui-gtk-3.22/mapview.c:219 client/gui-gtk-4.0/mapview.c:222
 #: client/gui-gtk-5.0/mapview.c:222
 msgid "Shows your current luxury/science/tax rates; click to toggle them."
-msgstr "現在の贅沢/科学/税の配分比; クリックで変更"
+msgstr "現在の贅沢/科学/税の配分（クリックで変更）"
 
 #: client/gui-gtk-3.22/menu.c:269 client/gui-gtk-4.0/menu.c:3061
 #: client/gui-gtk-5.0/menu.c:3065
@@ -7146,7 +7145,6 @@ msgstr "観察者"
 msgid "Detached"
 msgstr "未割り当て"
 
-# Daniel
 #. TRANS: Keep individual lines short
 #: client/gui-gtk-3.22/pages.c:2680 client/gui-gtk-4.0/pages.c:2802
 #: client/gui-gtk-5.0/pages.c:2802
@@ -7154,19 +7152,17 @@ msgid ""
 "Number of _Players\n"
 "(including AI):"
 msgstr ""
-"プレイヤー数\n"
-"(AIも含む)(_P):"
+"プレイヤー数(_P)"
 
-# Belgae
 #: client/gui-gtk-3.22/pages.c:2706 client/gui-gtk-4.0/pages.c:2828
 #: client/gui-gtk-5.0/pages.c:2828
 msgid "AI Skill _Level:"
-msgstr "AIのレベル(_L):"
+msgstr "AIのレベル(_L)"
 
 #: client/gui-gtk-3.22/pages.c:2721 client/gui-gtk-4.0/pages.c:2843
 #: client/gui-gtk-5.0/pages.c:2843
 msgid "Ruleset:"
-msgstr "ルールセット :"
+msgstr "ルールセット"
 
 # clefs
 #: client/gui-gtk-3.22/pages.c:2728 client/gui-gtk-4.0/pages.c:2850
@@ -17252,21 +17248,19 @@ msgid "Disband %d unit?"
 msgid_plural "Disband %d units?"
 msgstr[0] "%dユニットを解散しますか？"
 
-# Belgae
 #: client/text.c:1420
 msgid "Shows your progress in researching the current technology."
-msgstr "研究の進捗状況"
+msgstr "研究の進捗："
 
-# clefs
 #: client/text.c:1427
 msgid "No research target."
-msgstr "未指定"
+msgstr "研究対象なし"
 
 #: client/text.c:1436
 #, c-format
 msgid "%d turn to loss"
 msgid_plural "%d turns to loss"
-msgstr[0] "喪失まで残り%dターン"
+msgstr[0] "喪失まで%dターン"
 
 #: client/text.c:1440
 msgid "Decreasing"
@@ -17278,49 +17272,41 @@ msgstr "研究停止中"
 
 #. TRANS: <tech>: <amount>/<total bulbs>
 #: client/text.c:1450
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %d/%d (%s, %s)."
-msgstr ""
-"(%s)\n"
-"%d/%d %s\n"
-"%s"
+msgstr "%s：%d/%d（%s、%s）"
 
-# ntaka
 #: client/text.c:1483
 msgid "Shows the progress of global warming:"
-msgstr "地球温暖化の進行度:"
+msgstr "温暖化の進行度"
 
 #: client/text.c:1484
 #, c-format
 msgid "Pollution rate: %d%%"
-msgstr "公害レート:   %d"
+msgstr "公害レート：%d"
 
-# clefs
 #: client/text.c:1485
 #, c-format
 msgid "Chance of catastrophic warming each turn: %d%%"
-msgstr "各ターンに壊滅的な温暖化が発生する確率: %d%%"
+msgstr "温暖化の発生率/ターン：%d%%"
 
-# ntaka
 #: client/text.c:1510
 msgid "Shows the progress of nuclear winter:"
-msgstr "核の冬の進行度:"
+msgstr "核の冬の進行度"
 
 #: client/text.c:1511
 #, c-format
 msgid "Fallout rate: %d%%"
-msgstr "灰降下レート: %d%%"
+msgstr "死の灰レート：%d%%"
 
-# clefs
 #: client/text.c:1512
 #, c-format
 msgid "Chance of catastrophic winter each turn: %d%%"
-msgstr "各ターンに壊滅的な核の冬が発生する確率: %d%%"
+msgstr "核の冬の発生率/ターン：%d%%"
 
-# ntaka
 #: client/text.c:1531
 msgid "Shows your current government:"
-msgstr "現在の政治体制:"
+msgstr "現在の政治体制："
 
 #. TRANS: spaceship text; should have constant width.
 #: client/text.c:1560
@@ -40447,7 +40433,7 @@ msgstr ""
 "        Ctrl+T: 税/贅沢/科学ダイアログを開く\n"
 "  Shift+Ctrl+R: 革命ダイアログを開く\n"
 "\n"
-"Shift+Return: ターン終了"
+"Shift+Enter: ターン終了"
 
 # Belgae
 #: data/helpdata.txt:1814
