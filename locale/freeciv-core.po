@@ -7164,11 +7164,10 @@ msgstr "AIのレベル(_L)"
 msgid "Ruleset:"
 msgstr "ルールセット"
 
-# clefs
 #: client/gui-gtk-3.22/pages.c:2728 client/gui-gtk-4.0/pages.c:2850
 #: client/gui-gtk-5.0/pages.c:2850
 msgid "_More Game Options..."
-msgstr "詳細なゲーム設定..."
+msgstr "ゲーム設定(_M)"
 
 # clefs
 #: client/gui-gtk-3.22/pages.c:2750 client/gui-gtk-3.22/unitselect.c:475
@@ -8755,10 +8754,9 @@ msgstr "観察"
 msgid "Client Options"
 msgstr "クライアント設定"
 
-# clefs
 #: client/gui-qt/fc_client.cpp:1208
 msgid "More Game Options"
-msgstr "詳細なゲーム設定"
+msgstr "ゲーム設定"
 
 #: client/gui-qt/fc_client.cpp:1214
 msgid "Nation:"
