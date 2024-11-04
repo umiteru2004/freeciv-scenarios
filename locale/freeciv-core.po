@@ -17039,11 +17039,10 @@ msgstr "西暦: %s (T%d)"
 msgid "Gold: %d (%+d)"
 msgstr "国庫: %d (%+d)"
 
-# Daniel
 #: client/text.c:981
 #, c-format
 msgid "Tax: %d Lux: %d Sci: %d"
-msgstr "税: %d 贅沢: %d 科学: %d"
+msgstr "贅沢: %2$d 科学: %3$d 税: %1$d"
 
 #: client/text.c:988 client/text.c:995
 msgid "Moving: Nobody"
@@ -17274,7 +17273,9 @@ msgstr "研究停止中"
 #: client/text.c:1450
 #, c-format
 msgid "%s: %d/%d (%s, %s)."
-msgstr "%s：%d/%d（%s、%s）"
+msgstr ""
+"%s：%d/%d\n"
+"（%s、%s）"
 
 #: client/text.c:1483
 msgid "Shows the progress of global warming:"
