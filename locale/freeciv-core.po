@@ -94,7 +94,7 @@
 # "Navigation": 航海術
 #
 # "incident"  : 事変
-# "incite"    : 煽動
+# "incite"    : 扇動
 # "revolt"    : 反乱
 #
 # "zone of control" : ZOC
@@ -811,13 +811,11 @@ msgstr "設定かパーミッションに何か間違いはありませんか？
 msgid ""
 "Freeciv is free software and you are welcome to distribute copies of it "
 "under certain conditions;"
-msgstr ""
-"Freecivはフリーソフトウェアです。条件に従ってFreecivのコピーを配布することを"
-"歓迎します。"
+msgstr "Freecivは無料のソフトウェアです。条件に従ってコピーが配布されることを歓迎します。"
 
 #: client/chatline_common.c:183
 msgid "See the \"Copying\" item on the Help menu."
-msgstr "ヘルプメニューの\"著作権\"の項目を参照してください。"
+msgstr "ゲーム内ヘルプ「著作権」の項目を参照してください。"
 
 #: client/chatline_common.c:186
 msgid "See COPYING file distributed with this program."
@@ -825,7 +823,7 @@ msgstr "詳細は\"COPYING\"ファイルを参照して下さい。"
 
 #: client/chatline_common.c:189
 msgid "Now ... Go give 'em hell!"
-msgstr "…さあ、やつらを地獄へ送ってやろうぜ！"
+msgstr "…さあ、やつらを地獄を見せてやろうぜ！"
 
 #: client/chatline_common.c:201
 #, c-format
@@ -1871,11 +1869,11 @@ msgstr "相互"
 
 #: client/climisc.c:207
 msgid "?embassy:Yes"
-msgstr "相手国に設立"
+msgstr "相手国に設置"
 
 #: client/climisc.c:210
 msgid "?embassy:With Us"
-msgstr "自国に設立"
+msgstr "自国に設置"
 
 # clefs
 #: client/climisc.c:213
@@ -2000,7 +1998,7 @@ msgstr "接続中。"
 # clefs
 #: client/clinet.c:323
 msgid "Disconnected from server."
-msgstr "サーバーから切断しています。"
+msgstr "サーバーから切断されました。"
 
 #: client/clinet.c:435 client/clinet.c:484
 msgid "server disconnected"
@@ -2580,7 +2578,7 @@ msgstr "都市の生産物"
 #: client/gui-sdl2/action_dialog.c:1678 client/gui-sdl3/action_dialog.c:1678
 #, c-format
 msgid "You can't incite a revolt in %s."
-msgstr "%sでは反乱は煽動できません。"
+msgstr "%sでは反乱は扇動できません。"
 
 # clefs
 #: client/gui-gtk-3.22/action_dialog.c:982
@@ -2588,7 +2586,7 @@ msgstr "%sでは反乱は煽動できません。"
 #: client/gui-gtk-5.0/action_dialog.c:979 client/gui-sdl2/action_dialog.c:1689
 #: client/gui-sdl3/action_dialog.c:1689
 msgid "City can't be incited!"
-msgstr "煽動できない都市です！"
+msgstr "扇動できない都市です！"
 
 #. TRANS: %s is pre-pluralised "Treasury contains %d gold."
 #: client/gui-gtk-3.22/action_dialog.c:988
@@ -2626,7 +2624,7 @@ msgid_plural ""
 "Inciting a revolt costs %d gold.\n"
 "%s"
 msgstr[0] ""
-"反乱煽動にかかるコストは金%dです。\n"
+"反乱扇動にかかるコストは金%dです。\n"
 "%s"
 
 #: client/gui-gtk-3.22/action_dialog.c:1068
@@ -2839,54 +2837,40 @@ msgid "_OK"
 msgstr "OK(_O)"
 
 #: client/gui-gtk-3.22/chatline.c:1343
-#, fuzzy
 msgid "Bold"
-msgstr ""
-"・太字にする:\n"
-"完全名シーケンス: [bold] ... [/bold]\n"
-"省略名シーケンス: [b] ... [/b]\n"
-"入力欄でのショートカット: Ctrl-B\n"
-"例: 「[b]太字[/b]」と入力すると、「太字」という単語が太字で表示されます。"
+msgstr "太字"
 
 #: client/gui-gtk-3.22/chatline.c:1349 client/gui-gtk-4.0/chatline.c:1397
 #: client/gui-gtk-5.0/chatline.c:1397
 msgid "Bold (Ctrl-B)"
-msgstr "太字(Ctrl-B)"
+msgstr "太字(Ctrl+B)"
 
 #: client/gui-gtk-3.22/chatline.c:1353
-#, fuzzy
 msgid "Italic"
-msgstr ""
-"・斜体にする:\n"
-"完全名シーケンス: [italic] ... [/italic]\n"
-"省略名シーケンス: [i] ... [/i]\n"
-"入力欄でのショートカット: Ctrl-I\n"
-"例:「[i]斜体[/i]」と入力すると、「斜体」という単語が斜体で表示されます。"
+msgstr "斜体"
 
 #: client/gui-gtk-3.22/chatline.c:1358 client/gui-gtk-4.0/chatline.c:1408
 #: client/gui-gtk-5.0/chatline.c:1408
 msgid "Italic (Ctrl-I)"
-msgstr "斜体(Ctrl-I)"
+msgstr "斜体(Ctrl+I)"
 
 #: client/gui-gtk-3.22/chatline.c:1362
-#, fuzzy
 msgid "Strikethrough"
-msgstr "取り消し(Ctrl-S)"
+msgstr "取り消し線"
 
 #: client/gui-gtk-3.22/chatline.c:1367 client/gui-gtk-4.0/chatline.c:1418
 #: client/gui-gtk-5.0/chatline.c:1418
 msgid "Strikethrough (Ctrl-S)"
-msgstr "取り消し(Ctrl-S)"
+msgstr "取り消し線(Ctrl+S)"
 
 #: client/gui-gtk-3.22/chatline.c:1371
-#, fuzzy
 msgid "Underline"
-msgstr "下線(Ctrl-U)"
+msgstr "下線"
 
 #: client/gui-gtk-3.22/chatline.c:1376 client/gui-gtk-4.0/chatline.c:1428
 #: client/gui-gtk-5.0/chatline.c:1428
 msgid "Underline (Ctrl-U)"
-msgstr "下線(Ctrl-U)"
+msgstr "下線(Ctrl+U)"
 
 #: client/gui-gtk-3.22/chatline.c:1379 client/gui-gtk-4.0/chatline.c:1433
 #: client/gui-gtk-5.0/chatline.c:1433
@@ -2896,7 +2880,7 @@ msgstr "色"
 #: client/gui-gtk-3.22/chatline.c:1384 client/gui-gtk-4.0/chatline.c:1439
 #: client/gui-gtk-5.0/chatline.c:1439
 msgid "Color (Ctrl-C)"
-msgstr "色(Ctrl-C)"
+msgstr "色(Ctrl+C)"
 
 #: client/gui-gtk-3.22/chatline.c:1394 client/gui-gtk-4.0/chatline.c:1448
 #: client/gui-gtk-5.0/chatline.c:1448
@@ -5076,7 +5060,7 @@ msgstr "Freeciv"
 #: client/gui-gtk-3.22/gui_main.c:892 client/gui-gtk-4.0/gui_main.c:871
 #: client/gui-gtk-5.0/gui_main.c:872
 msgid "Detach/Attach the pane."
-msgstr ""
+msgstr "ペインの取り付け/取り外し"
 
 #: client/gui-gtk-3.22/gui_main.c:1137 client/gui-gtk-4.0/gui_main.c:1066
 #: client/gui-gtk-5.0/gui_main.c:1067 client/gui-qt/sidebar.cpp:663
@@ -5098,7 +5082,7 @@ msgstr "ターン終了"
 #: client/gui-sdl2/mapctrl.c:1690 client/gui-sdl2/mapview.c:947
 #: client/gui-sdl3/mapctrl.c:1686 client/gui-sdl3/mapview.c:943
 msgid "Shift+Return"
-msgstr "Shift+Return"
+msgstr "Shift+Enter"
 
 #: client/gui-gtk-3.22/gui_main.c:1519 client/gui-gtk-4.0/gui_main.c:1453
 #: client/gui-gtk-5.0/gui_main.c:1454 client/gui-qt/menu.cpp:1539
@@ -5747,11 +5731,10 @@ msgstr ""
 msgid " (observer)"
 msgstr " (観察者)"
 
-# clefs
 #: client/gui-gtk-3.22/mapview.c:219 client/gui-gtk-4.0/mapview.c:222
 #: client/gui-gtk-5.0/mapview.c:222
 msgid "Shows your current luxury/science/tax rates; click to toggle them."
-msgstr "現在の贅沢/科学/税の配分比; クリックで変更"
+msgstr "現在の贅沢/科学/税の配分（クリックで変更）"
 
 #: client/gui-gtk-3.22/menu.c:269 client/gui-gtk-4.0/menu.c:3061
 #: client/gui-gtk-5.0/menu.c:3065
@@ -6595,7 +6578,7 @@ msgstr "革命(_R)..."
 #: client/gui-gtk-5.0/menu.c:1192 client/gui-gtk-5.0/pages.c:147
 #: client/gui-qt/fc_client.cpp:886 client/gui-qt/menu.cpp:984
 msgid "Set local options"
-msgstr "ローカルオプション"
+msgstr "クライアント設定"
 
 #: client/gui-gtk-3.22/menu.c:659 client/gui-gtk-3.22/pages.c:1581
 #: client/gui-gtk-4.0/menu.c:1212 client/gui-gtk-4.0/pages.c:1610
@@ -7162,7 +7145,6 @@ msgstr "観察者"
 msgid "Detached"
 msgstr "未割り当て"
 
-# Daniel
 #. TRANS: Keep individual lines short
 #: client/gui-gtk-3.22/pages.c:2680 client/gui-gtk-4.0/pages.c:2802
 #: client/gui-gtk-5.0/pages.c:2802
@@ -7170,25 +7152,22 @@ msgid ""
 "Number of _Players\n"
 "(including AI):"
 msgstr ""
-"プレイヤー数\n"
-"(AIも含む)(_P):"
+"プレイヤー数(_P)"
 
-# Belgae
 #: client/gui-gtk-3.22/pages.c:2706 client/gui-gtk-4.0/pages.c:2828
 #: client/gui-gtk-5.0/pages.c:2828
 msgid "AI Skill _Level:"
-msgstr "AIのレベル(_L):"
+msgstr "AIのレベル(_L)"
 
 #: client/gui-gtk-3.22/pages.c:2721 client/gui-gtk-4.0/pages.c:2843
 #: client/gui-gtk-5.0/pages.c:2843
 msgid "Ruleset:"
-msgstr "ルールセット :"
+msgstr "ルールセット"
 
-# clefs
 #: client/gui-gtk-3.22/pages.c:2728 client/gui-gtk-4.0/pages.c:2850
 #: client/gui-gtk-5.0/pages.c:2850
 msgid "_More Game Options..."
-msgstr "詳細なゲーム設定..."
+msgstr "ゲーム設定(_M)"
 
 # clefs
 #: client/gui-gtk-3.22/pages.c:2750 client/gui-gtk-3.22/unitselect.c:475
@@ -8773,12 +8752,11 @@ msgstr "観察"
 
 #: client/gui-qt/fc_client.cpp:1180
 msgid "Client Options"
-msgstr "ローカルオプション"
+msgstr "クライアント設定"
 
-# clefs
 #: client/gui-qt/fc_client.cpp:1208
 msgid "More Game Options"
-msgstr "詳細なゲーム設定"
+msgstr "ゲーム設定"
 
 #: client/gui-qt/fc_client.cpp:1214
 msgid "Nation:"
@@ -9525,7 +9503,7 @@ msgstr "科学技術を盗む"
 
 #: client/gui-qt/menu.cpp:1496
 msgid "Incite a revolt"
-msgstr "反乱の煽動"
+msgstr "反乱の扇動"
 
 #: client/gui-qt/menu.cpp:1503
 #, fuzzy
@@ -11495,7 +11473,7 @@ msgstr "サーバーオプション"
 
 #: client/gui-sdl2/optiondlg.c:822 client/gui-sdl3/optiondlg.c:836
 msgid "Local options"
-msgstr "ローカルオプション"
+msgstr "クライアント設定"
 
 #: client/gui-sdl2/optiondlg.c:842 client/gui-sdl3/optiondlg.c:856
 msgid "Worklists"
@@ -11503,7 +11481,7 @@ msgstr "生産待ちリスト"
 
 #: client/gui-sdl2/optiondlg.c:853 client/gui-sdl3/optiondlg.c:867
 msgid "Save Local Options"
-msgstr "ローカルオプションの保存"
+msgstr "クライアント設定の保存"
 
 #: client/gui-sdl2/optiondlg.c:873 client/gui-sdl3/optiondlg.c:887
 msgid "Help Browser"
@@ -16146,9 +16124,7 @@ msgstr "このフォントは、ベータラベルの表示に使用されます
 msgid "Small Font"
 msgstr "小さなフォント"
 
-# Belgae
 #: client/options.c:2922 client/options.c:3143 client/options.c:3364
-#, fuzzy
 #| msgid ""
 #| "This font is used for any small font request.  For example, it is used "
 #| "for display the building lists in the city dialog, the Economy report or "
@@ -16158,8 +16134,8 @@ msgid ""
 "display the building lists in the city dialog, the Economy report or the "
 "Units report."
 msgstr ""
-"このフォントは、小さなフォントに使用されます。例えば、都市ダイアログの都市施設"
-"リストや、経済報告、ユニット報告などです。"
+"このフォントは、小さなフォントが必要な場所で使用されます。\n"
+"例えば、都市ダイアログの都市施設リスト、経済タブ、ユニットタブなどです。"
 
 #: client/options.c:2929 client/options.c:3150 client/options.c:3371
 msgid "Comment Label"
@@ -17061,11 +17037,10 @@ msgstr "西暦: %s (T%d)"
 msgid "Gold: %d (%+d)"
 msgstr "国庫: %d (%+d)"
 
-# Daniel
 #: client/text.c:981
 #, c-format
 msgid "Tax: %d Lux: %d Sci: %d"
-msgstr "税: %d 贅沢: %d 科学: %d"
+msgstr "贅沢: %2$d 科学: %3$d 税: %1$d"
 
 #: client/text.c:988 client/text.c:995
 msgid "Moving: Nobody"
@@ -17270,21 +17245,19 @@ msgid "Disband %d unit?"
 msgid_plural "Disband %d units?"
 msgstr[0] "%dユニットを解散しますか？"
 
-# Belgae
 #: client/text.c:1420
 msgid "Shows your progress in researching the current technology."
-msgstr "研究の進捗状況"
+msgstr "研究の進捗："
 
-# clefs
 #: client/text.c:1427
 msgid "No research target."
-msgstr "未指定"
+msgstr "研究対象なし"
 
 #: client/text.c:1436
 #, c-format
 msgid "%d turn to loss"
 msgid_plural "%d turns to loss"
-msgstr[0] "喪失まで残り%dターン"
+msgstr[0] "喪失まで%dターン"
 
 #: client/text.c:1440
 msgid "Decreasing"
@@ -17296,49 +17269,43 @@ msgstr "研究停止中"
 
 #. TRANS: <tech>: <amount>/<total bulbs>
 #: client/text.c:1450
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %d/%d (%s, %s)."
 msgstr ""
-"(%s)\n"
-"%d/%d %s\n"
-"%s"
+"%s：%d/%d\n"
+"（%s、%s）"
 
-# ntaka
 #: client/text.c:1483
 msgid "Shows the progress of global warming:"
-msgstr "地球温暖化の進行度:"
+msgstr "温暖化の進行度"
 
 #: client/text.c:1484
 #, c-format
 msgid "Pollution rate: %d%%"
-msgstr "公害レート:   %d"
+msgstr "公害レート：%d"
 
-# clefs
 #: client/text.c:1485
 #, c-format
 msgid "Chance of catastrophic warming each turn: %d%%"
-msgstr "各ターンに壊滅的な温暖化が発生する確率: %d%%"
+msgstr "温暖化の発生率/ターン：%d%%"
 
-# ntaka
 #: client/text.c:1510
 msgid "Shows the progress of nuclear winter:"
-msgstr "核の冬の進行度:"
+msgstr "核の冬の進行度"
 
 #: client/text.c:1511
 #, c-format
 msgid "Fallout rate: %d%%"
-msgstr "灰降下レート: %d%%"
+msgstr "死の灰レート：%d%%"
 
-# clefs
 #: client/text.c:1512
 #, c-format
 msgid "Chance of catastrophic winter each turn: %d%%"
-msgstr "各ターンに壊滅的な核の冬が発生する確率: %d%%"
+msgstr "核の冬の発生率/ターン：%d%%"
 
-# ntaka
 #: client/text.c:1531
 msgid "Shows your current government:"
-msgstr "現在の政治体制:"
+msgstr "現在の政治体制："
 
 #. TRANS: spaceship text; should have constant width.
 #: client/text.c:1560
@@ -18058,7 +18025,7 @@ msgstr "反乱を煽る"
 #: data/civ2civ3/actions.ruleset:266 data/multiplayer/actions.ruleset:254
 #, c-format
 msgid "Incite a Re%svolt and Escape%s"
-msgstr "反乱を煽動して脱出(%sV)"
+msgstr "反乱を扇動して脱出(%sV)"
 
 #. TRANS: Establish _Embassy (100% chance of success).
 #: common/actions.c:6096 data/civ2/actions.ruleset:253
@@ -19070,7 +19037,7 @@ msgstr "失敗"
 
 #: common/events.c:123 common/events.c:133
 msgid "Incite"
-msgstr "煽動"
+msgstr "扇動"
 
 #: common/events.c:124 common/events.c:134
 msgid "Poison"
@@ -19532,10 +19499,9 @@ msgid "International Outrage"
 msgstr ""
 
 #: common/fc_types.h:497
-#, fuzzy
 #| msgid "Restricted to teams"
 msgid "Restricted"
-msgstr "チーム内に限り可能"
+msgstr "制限あり"
 
 #: common/fc_types.h:499
 msgid "Novice"
@@ -23774,10 +23740,10 @@ msgid "?unitflag:Settlers"
 msgstr "作業を行うことができる"
 
 #: common/version.c:41
-#, fuzzy, c-format
+#, c-format
 #| msgid "Freeciv version %s (%s)"
 msgid "Freeciv version %s %s (%s)"
-msgstr "Freeciv バージョン %s (%s)"
+msgstr "Freeciv v%s %s (%s)"
 
 #: common/version.c:42 common/version.c:46
 msgid "(beta version)"
@@ -23786,17 +23752,17 @@ msgstr "(ベータ版)"
 #: common/version.c:45
 #, c-format
 msgid "Freeciv version %s %s"
-msgstr "Freeciv バージョン %s %s"
+msgstr "Freeciv v%s %s"
 
 #: common/version.c:49
 #, c-format
 msgid "Freeciv version %s (%s)"
-msgstr "Freeciv バージョン %s (%s)"
+msgstr "Freeciv v%s (%s)"
 
 #: common/version.c:52
 #, c-format
 msgid "Freeciv version %s"
-msgstr "Freeciv バージョン %s"
+msgstr "Freeciv v%s"
 
 #: common/version.c:65
 msgid "betatest version "
@@ -23896,7 +23862,7 @@ msgstr "バッファオーバーフロー"
 #: common/networking/connection.c:481
 #, c-format
 msgid "%s from %s"
-msgstr "%2$sからの %1$s"
+msgstr "%2$sからの%1$s"
 
 #. TRANS: preserve leading space.
 #: common/networking/connection.c:492
@@ -23963,7 +23929,7 @@ msgstr "ユニットを買収する(%sB) %s"
 #: data/multiplayer/actions.ruleset:251
 #, c-format
 msgid "Incite a %sRevolt%s"
-msgstr "反乱の煽動(%sR)%s"
+msgstr "反乱の扇動(%sR)%s"
 
 #. TRANS: _Build City (100% chance of success).
 #: data/civ1/actions.ruleset:245 data/civ2/actions.ruleset:289
@@ -24351,8 +24317,8 @@ msgid ""
 "enemy agents try to evade your own agents stationed in the city, or sabotage "
 "your buildings."
 msgstr ""
-"他国の外交官が反乱の煽動を試みる際、その費用は政治体制に関わらず、首都からの"
-"距離に比例して減少します。首都では反乱を煽動できません。加えて敵の外交官から"
+"他国の外交官が反乱の扇動を試みる際、その費用は政治体制に関わらず、首都からの"
+"距離に比例して減少します。首都では反乱を扇動できません。加えて敵の外交官から"
 "の破壊工作および駐在する味方外交官との諜報戦において有利なボーナスが得られま"
 "す。"
 
@@ -25297,7 +25263,7 @@ msgid ""
 "Diplomats and Spies."
 msgstr ""
 "民主主義の(幸福な)市民は政府を強く信じているので、その忠誠心は変わりません。"
-"民主政文明の軍隊は買収されません。敵外交官やスパイは都市の反乱の煽動はできま"
+"民主政文明の軍隊は買収されません。敵外交官やスパイは都市の反乱の扇動はできま"
 "せん。"
 
 # clefs
@@ -27872,12 +27838,12 @@ msgid ""
 "any city governed by a democracy. Incitement may be attempted in peacetime, "
 "but will cause a diplomatic incident."
 msgstr ""
-"・「反乱の煽動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
+"・「反乱の扇動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
 "編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属するユニッ"
 "トも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せず、相手国"
 "のユニットとして残ります。都市外にいる所属ユニットは失われ、どちらのプレイ"
 "ヤーのものにもなりません。必要な経費は都市および都市を所有する文明のステータ"
-"スによって決まります。首都および民主主義体制下の都市では反乱を煽動することは"
+"スによって決まります。首都および民主主義体制下の都市では反乱を扇動することは"
 "できません。平時においても試みることができますが、事変を引き起こします。"
 
 #: data/civ1/units.ruleset:1495 data/civ2/units.ruleset:2288
@@ -28160,7 +28126,7 @@ msgid ""
 "of the city 4 times bigger. (These effects are redundant in your capital "
 "city.)"
 msgstr ""
-"都市の汚職を50%減らします。また他国の外交官が都市の反乱を煽動するとき、その費"
+"都市の汚職を50%減らします。また他国の外交官が都市の反乱を扇動するとき、その費"
 "用を4倍に増加させます。ただし首都ではこれらの効果は発揮されません。"
 
 #: data/civ2/buildings.ruleset:389 data/classic/buildings.ruleset:396
@@ -28258,8 +28224,8 @@ msgid ""
 "enjoys a bonus when enemy agents try to evade your own agents stationed in "
 "the city, or sabotage your buildings."
 msgstr ""
-"外交官・スパイが都市の反乱を煽動する際、必要な費用は政治体制に関わらず、その"
-"プレイヤーの首都からの距離に比例して減少します。首都では反乱を煽動できませ"
+"外交官・スパイが都市の反乱を扇動する際、必要な費用は政治体制に関わらず、その"
+"プレイヤーの首都からの距離に比例して減少します。首都では反乱を扇動できませ"
 "ん。加えて敵の外交官・スパイからの破壊工作および駐在する味方外交官との諜報戦"
 "において有利なボーナスが得られます。"
 
@@ -30020,7 +29986,7 @@ msgid ""
 "A Spy that survives the more aggressive actions (sabotage, theft, inciting "
 "rebellion, and poisoning) escapes to the safety of the nearest friendly city."
 msgstr ""
-"攻撃性の高い活動（破壊工作、科学技術の窃取、反乱の煽動、水源への毒物混入）を"
+"攻撃性の高い活動（破壊工作、科学技術の窃取、反乱の扇動、水源への毒物混入）を"
 "成功させ脱出したスパイは、安全のため最も近い友好的な都市に逃れます。"
 
 #: data/civ2/units.ruleset:2354
@@ -30302,7 +30268,7 @@ msgid ""
 "Reduces the corruption in a city by 50%, and makes the revolt cost of the "
 "city 4 times bigger. (These effects are redundant in your capital city.)"
 msgstr ""
-"都市の汚職を50%減らします。また他国の外交官が都市の反乱を煽動するとき、その費"
+"都市の汚職を50%減らします。また他国の外交官が都市の反乱を扇動するとき、その費"
 "用を4倍に増加させます。ただし首都ではこれらの効果は発揮されません。"
 
 #: data/classic/buildings.ruleset:502 data/multiplayer/buildings.ruleset:500
@@ -31516,7 +31482,7 @@ msgstr ""
 #, fuzzy
 #| msgid "* Your cities cannot be incited to revolt.\n"
 msgid "A city with a Courthouse cannot be incited to revolt."
-msgstr "・各都市は反乱を煽動されません。\n"
+msgstr "・各都市は反乱を扇動されません。\n"
 
 #: data/sandbox/buildings.ruleset:520 data/civ2civ3/buildings.ruleset:517
 #, no-c-format
@@ -31722,7 +31688,7 @@ msgid ""
 "enjoys a bonus when enemy agents try to evade your own agents stationed in "
 "the city, or sabotage your buildings."
 msgstr ""
-"また総主教庁の置かれた都市で、反乱を煽動することはできません。加えて敵の外交"
+"また総主教庁の置かれた都市で、反乱を扇動することはできません。加えて敵の外交"
 "官からの破壊工作および駐在する味方外交官との諜報戦において有利なボーナスが得"
 "られます。"
 
@@ -32205,7 +32171,7 @@ msgid ""
 "Also, none of the owner's cities can be incited to revolt."
 msgstr ""
 "城壁と裁判所がそれぞれ1人の不幸市民を平静にできるようになります(戦闘ユニット"
-"が原因の者は除きます)。また全ての都市で反乱の煽動を防ぎます。"
+"が原因の者は除きます)。また全ての都市で反乱の扇動を防ぎます。"
 
 #: data/sandbox/buildings.ruleset:2142 data/civ2civ3/buildings.ruleset:1987
 msgid "Statue of Zeus"
@@ -34629,12 +34595,12 @@ msgid ""
 "any city with Courthouse. Incitement may be attempted in peacetime, but will "
 "cause a diplomatic incident."
 msgstr ""
-"・「反乱の煽動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
+"・「反乱の扇動」:ある程度の資金を投入し、他国の都市を離叛させ、あなたの帝国に"
 "編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属するユニッ"
 "トも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せず、相手国"
 "のユニットとして残ります。都市外にいる所属ユニットは失われ、どちらのプレイ"
 "ヤーのものにもなりません。必要な経費は都市および都市を所有する文明のステータ"
-"スによって決まります。首都および民主主義体制下の都市では反乱を煽動することは"
+"スによって決まります。首都および民主主義体制下の都市では反乱を扇動することは"
 "できません。平時においても試みることができますが、事変を引き起こします。"
 
 #: data/sandbox/units.ruleset:2678 data/civ2civ3/units.ruleset:2504
@@ -38397,7 +38363,7 @@ msgstr ""
 "外国籍の市民は他の市民たちと同じように労働し、ほとんどの点で行動に違いはあり"
 "ません。しかし彼らの本国と敵対した場合は、不幸市民になることがあります。また"
 "外国籍の市民が暮らす都市に対して、彼らの本国が差し向けた工作員は、より低い費"
-"用で反乱を煽動することができます。サーバーオプションで移民が有効であれば、彼"
+"用で反乱を扇動することができます。サーバーオプションで移民が有効であれば、彼"
 "らは母国へ移住する傾向が強まります。ルールセットの設定によっては、外国籍の市"
 "民は時間が経つにつれて現在住んでいる国に同化してゆきます。"
 
@@ -38505,7 +38471,7 @@ msgid ""
 msgstr ""
 "もしある都市で不幸市民が幸福市民よりも多くなると、その都市で暴動が発生しま"
 "す。贅沢ポイントは産出されるものの、食料・生産・科学の産出量は0ptとなり、税収"
-"も得られません。また都市は敵の工作員によって反乱を煽動されやすくなります。さ"
+"も得られません。また都市は敵の工作員によって反乱を扇動されやすくなります。さ"
 "らに政治体制によっては、この状態が長く続くと全国的な動乱に発展し、政府が崩壊"
 "することもあります。"
 
@@ -40356,7 +40322,7 @@ msgstr ""
 "  Shift+右ドラッグ:　　　　　　エリアの内容を既存の選択に追加する\n"
 "\n"
 "  このモードでは複数のユニットあるいは都市を選択することができます。選択範囲"
-"内に都市が含まれていて、ローカルオプションで\"都市をユニットより優先して選択"
+"内に都市が含まれていて、クライアント設定で\"都市をユニットより優先して選択"
 "\"が設定されている場合、都市のみが選択され、現在のユニット選択はそのままにな"
 "ります。設定していない場合は、都市とユニットの両方が選択されます。\n"
 "\n"
@@ -40466,7 +40432,7 @@ msgstr ""
 "        Ctrl+T: 税/贅沢/科学ダイアログを開く\n"
 "  Shift+Ctrl+R: 革命ダイアログを開く\n"
 "\n"
-"Shift+Return: ターン終了"
+"Shift+Enter: ターン終了"
 
 # Belgae
 #: data/helpdata.txt:1814
@@ -40676,7 +40642,7 @@ msgstr ""
 "・太字にする:\n"
 "完全名シーケンス: [bold] ... [/bold]\n"
 "省略名シーケンス: [b] ... [/b]\n"
-"入力欄でのショートカット: Ctrl-B\n"
+"入力欄でのショートカット: Ctrl+B\n"
 "例: 「[b]太字[/b]」と入力すると、「太字」という単語が太字で表示されます。"
 
 #: data/helpdata.txt:1914
@@ -40697,7 +40663,7 @@ msgstr ""
 "・色を付ける:\n"
 "完全名シーケンス: [color] ... [/color] \n"
 "省略名シーケンス: [c] ... [/c]\n"
-"入力欄でのショートカット: Ctrl-C（入力欄の上のツールバーから色を選択する必要"
+"入力欄でのショートカット: Ctrl+C（入力欄の上のツールバーから色を選択する必要"
 "もあります）\n"
 "colorの開始シーケンスには以下のパラメータが少なくとも1つ必要です:\n"
 "・foreground（省略名 fg）:文字色です。「red」などの色名、または#3050b2か#35b"
@@ -40717,7 +40683,7 @@ msgstr ""
 "・斜体にする:\n"
 "完全名シーケンス: [italic] ... [/italic]\n"
 "省略名シーケンス: [i] ... [/i]\n"
-"入力欄でのショートカット: Ctrl-I\n"
+"入力欄でのショートカット: Ctrl+I\n"
 "例:「[i]斜体[/i]」と入力すると、「斜体」という単語が斜体で表示されます。"
 
 #: data/helpdata.txt:1933
@@ -40732,7 +40698,7 @@ msgstr ""
 "・取り消し線を引く:\n"
 "完全名シーケンス: [strike] ... [/strike]\n"
 "省略名シーケンス: [s] ... [/s]\n"
-"入力欄でのショートカット: Ctrl-S\n"
+"入力欄でのショートカット: Ctrl+S\n"
 "例: 「[s]取り消し線[/s]」と入力すると、「取り消し線」という単語に取り消し線が"
 "引かれます。"
 
@@ -40748,7 +40714,7 @@ msgstr ""
 "・下線を引く:\n"
 "完全名シーケンス: [underline] ... [/underline]\n"
 "省略名シーケンス: [u] ... [/u]\n"
-"入力欄でのショートカット: Ctrl-U\n"
+"入力欄でのショートカット: Ctrl+U\n"
 "例: 「[u]下線[/u]」と入力すると、「下線」という単語に下線が引かれます。"
 
 #: data/helpdata.txt:1947
@@ -40771,7 +40737,7 @@ msgstr ""
 "・都市リンクを設定する:\n"
 "完全名シーケンス: [link target=\"city\"] ... [/link]\n"
 "省略名シーケンス: '[l tgt=\"city\"] ... [/l]'\n"
-"ショートカット: マップ上の都市にマウスポインタを合わせて、Ctrl-Alt-右クリック"
+"ショートカット: マップ上の都市にマウスポインタを合わせて、Ctrl+Alt+右クリック"
 "する。\n"
 "idパラメータには、指定したい都市のIDを設定しなければなりません。\n"
 "nameパラメータはオプションです。リンクを利用するユーザー自身のマップでこの都"
@@ -40802,8 +40768,8 @@ msgstr ""
 "・タイルリンクを設定する:\n"
 "完全名シーケンス: [link target=\"tile\"] ... [/link]\n"
 "省略名シーケンス: [l tgt=\"tile\"] ... [/l]\n"
-"ショートカット: マップ上で都市以外のタイルにマウスポインタを合わせて、Ctrl-"
-"Alt-右クリックする。\n"
+"ショートカット: マップ上で都市以外のタイルにマウスポインタを合わせて、Ctrl+"
+"Alt+右クリックする。\n"
 "xパラメータおよびyパラメータには、指定したいタイルの座標を設定しなければなり"
 "ません。\n"
 "開始と終了を1つの角かっこの組の中で行うこともできます。「[link "
@@ -40832,7 +40798,7 @@ msgstr ""
 "・ユニットリンクを設定する:\n"
 "完全名シーケンス: [link target=\"unit\"] ... [/link]\n"
 "省略名シーケンス: [l tgt=\"unit\"] ... [/l]\n"
-"ショートカット: マップ上のユニットにマウスポインタを合わせ、Shift-Ctrl-Alt-右"
+"ショートカット: マップ上のユニットにマウスポインタを合わせ、Shift+Ctrl+Alt+右"
 "クリックする。\n"
 "idパラメータには、指定したいユニットのIDを設定しなければなりません。nameパラ"
 "メータはオプションです。リンクを利用するユーザー自身のマップでこのユニットを"
@@ -48050,97 +48016,88 @@ msgstr "ようこそ %s"
 #: server/connecthand.c:172
 #, c-format
 msgid "Welcome to the %s Server running at %s port %d."
-msgstr ""
-"ようこそ %sサーバーへ。このサーバーは %s(ポート %d)で実行されています。"
+msgstr "%sサーバーにようこそ。\nこのサーバーは、%s:%dで実行されています。"
 
 #: server/connecthand.c:176
 #, c-format
 msgid "Welcome to the %s Server at port %d."
-msgstr "ようこそ %sサーバー(ポート %d)へ。"
+msgstr "%sサーバーにようこそ。\nこのサーバーは、%d番ポートで実行されています。"
 
-# clefs
 #: server/connecthand.c:184 server/connecthand.c:331
 #, c-format
 msgid "%s has connected from %s."
-msgstr "%sは %sから接続しています。"
+msgstr "%sは%sから接続しています。"
 
 #: server/connecthand.c:213
 #, c-format
 msgid "Your delegate %s was controlling your player '%s'; now detached."
-msgstr ""
-"プレイヤー'%2$s'の引き継ぎを委託されていたユーザー'%1$s'は、プレイヤー割り当"
-"てを解除されました。"
+msgstr "あなたの代わりに \"%2$s\" を操作していた \"%1$s\" は、操作を終了しました。"
 
 #: server/connecthand.c:217
 #, c-format
 msgid "%s reconnected, ending your delegated control of player '%s'."
-msgstr ""
-"ユーザー'%s'が再接続しましたので、あなたへのプレイヤー'%s'引き継ぎ委託は終了"
-"します。"
+msgstr "\"%s\" が再接続したので、 \"%s\" へのあなたの操作は終了しました。"
 
 #: server/connecthand.c:226
 #, c-format
 msgid "Couldn't get control of '%s' from delegation to %s."
-msgstr ""
+msgstr "あなたの代わりに \"%s\" を操作していた \"%s\" から、操作を取り戻すことができませんでした。"
 
 #: server/connecthand.c:265
-#, fuzzy
 #| msgid "Couldn't attach your connection to new player."
 msgid "Couldn't attach your connection to a scenario player."
-msgstr "新しいプレイヤーとして接続できませんでした。"
+msgstr "シナリオのプレイヤーとして接続することができませんでした。"
 
-# clefs
 #: server/connecthand.c:278
 msgid "Couldn't attach your connection to new player."
-msgstr "新しいプレイヤーとして接続できませんでした。"
+msgstr "新しいプレイヤーとして接続することができませんでした。"
 
 #: server/connecthand.c:296
 #, c-format
 msgid "You are logged in as '%s' connected to no player."
-msgstr "あなたは「%s」としてログインしており、どのプレイヤーにも割り当てられていません。"
+msgstr "あなたは'%s'として接続していますが、プレイヤーを操作していません。"
 
 #: server/connecthand.c:300
 #, c-format
 msgid "You are logged in as '%s' connected to %s."
-msgstr "あなたは「%s」としてログインしており、プレイヤー「%s」に割り当てられています。"
+msgstr "あなたは'%s'として接続しており、プレイヤー'%s'を操作しています。"
 
 #: server/connecthand.c:315
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s has connected from %s (player %s)."
 msgid "%s has connected (player %s)."
-msgstr "%sは %sから接続しています（プレイヤー名 %s）。"
+msgstr "%s（プレイヤー名: %s）が接続しています。"
 
 #: server/connecthand.c:320
 #, c-format
 msgid "%s has connected from %s (player %s)."
-msgstr "%sは %sから接続しています（プレイヤー名 %s）。"
+msgstr "%1$s（プレイヤー名: %3$s）は%2$sから接続しています。"
 
 #: server/connecthand.c:327
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s is not connected."
 msgid "%s has connected."
-msgstr "%s は接続されていません"
+msgstr "%sが接続しています。"
 
 #: server/connecthand.c:349
 #, c-format
 msgid "Turn-blocking game play: waiting on %s to finish turn..."
-msgstr "ターンブロッキングモード: %sがターン終了するのを待っています。"
+msgstr "ターンブロッキングモード: %sがターンを終了するのを待っています。"
 
-# Belgae
 #: server/connecthand.c:358
 msgid " *** Server is in edit mode. *** "
-msgstr " ☆☆☆ サーバーは編集モード中です。 ☆☆☆"
+msgstr "*** サーバーは編集モードです。 ***"
 
 # clefs
 #: server/connecthand.c:388
 #, c-format
 msgid "Client rejected: %s."
-msgstr "拒否されたクライアント: %s"
+msgstr "クライアントが拒否されました: %s。"
 
 #: server/connecthand.c:408
 #, c-format
 msgid "Connection request from %s from %s"
-msgstr "%2$s の %1$s から接続要請"
+msgstr "%2$sの%1$sからの接続要求"
 
 #: server/connecthand.c:412
 #, c-format
@@ -48607,26 +48564,26 @@ msgstr[0] ""
 #: server/diplomats.c:1173
 #, c-format
 msgid "You don't have enough gold to subvert %s."
-msgstr "%sを煽動転覆するのに十分なお金がありません。"
+msgstr "%sを扇動転覆するのに十分なお金がありません。"
 
 # yasu
 # 「革命」か「反逆」か? (clefs)
 #: server/diplomats.c:1195
 #, c-format
 msgid "Your %s was caught in the attempt of inciting a revolt!"
-msgstr "あなたの%sは反乱を煽動しようとした疑いで逮捕されました。"
+msgstr "あなたの%sは反乱を扇動しようとした疑いで逮捕されました。"
 
 # yasu, ama
 #: server/diplomats.c:1199
 #, c-format
 msgid "You caught %s %s attempting to incite a revolt in %s!"
-msgstr "%3$sで%1$sの%2$sを反乱煽動の容疑で逮捕しました。"
+msgstr "%3$sで%1$sの%2$sを反乱扇動の容疑で逮捕しました。"
 
 # yasu, clefs
 #: server/diplomats.c:1229
 #, c-format
 msgid "Revolt incited in %s, you now rule the city!"
-msgstr "%sで反乱が煽動され、今やあなたが都市の実権を握っています！"
+msgstr "%sで反乱が扇動され、今やあなたが都市の実権を握っています！"
 
 # yasu
 #: server/diplomats.c:1232
@@ -48743,7 +48700,7 @@ msgstr "%1$sが%3$sから金%2$dを盗んだとみられます。"
 #: server/diplomats.c:1880
 #, c-format
 msgid "Your %s was caught in an attempt of hiding a nuke in %s!"
-msgstr "%sは反乱を煽動しようとした疑いで逮捕されました。"
+msgstr "%sは反乱を扇動しようとした疑いで逮捕されました。"
 
 #: server/diplomats.c:1886
 #, c-format
@@ -50927,14 +50884,13 @@ msgstr "ゲーム終了"
 #. TRANS: Description of caravan bonus style setting value.
 #. TRANS: Description of trade revenue style setting value.
 #: server/settings.c:238 server/settings.c:292
-#, fuzzy
 #| msgid "Classic ruleset"
 msgid "Classic Freeciv"
-msgstr "classicルールセット"
+msgstr "デフォルト"
 
 #: server/settings.c:239
 msgid "Log^2 N style"
-msgstr ""
+msgstr "log^2 N"
 
 #: server/settings.c:252
 msgid "Number of tiles"
@@ -50963,7 +50919,7 @@ msgstr "南北をつなげる"
 
 #: server/settings.c:293
 msgid "Proportional to tile trade"
-msgstr ""
+msgstr "タイルが産出する交易ポイントに比例"
 
 #: server/settings.c:305
 msgid "Scenario map"
@@ -51007,7 +50963,7 @@ msgstr "1つの大陸に全プレイヤー"
 
 #: server/settings.c:330
 msgid "Depending on size of continents"
-msgstr "大陸のサイズに合わせる"
+msgstr "大陸の大きさに合わせる"
 
 #: server/settings.c:344
 msgid "As close as possible"
@@ -51065,21 +51021,19 @@ msgstr "指定時間ごと"
 
 #: server/settings.c:410
 msgid "See everything inside borders"
-msgstr "国境線内ではすべて可視にする"
+msgstr "国境線内全域が視界"
 
 #: server/settings.c:412
 msgid "Borders expand to unknown, revealing tiles"
-msgstr "未知のタイルまで国境を拡張し、タイルを可視にする"
+msgstr "未知の領域にも国境線を拡張し、線内全域が視界"
 
 #: server/settings.c:423
-#, fuzzy
 msgid "Fixed"
-msgstr "固定"
+msgstr "不均一"
 
 #: server/settings.c:424
-#, fuzzy
 msgid "Even"
-msgstr "・%sへ乗降することができる場所に制限はありません。\n"
+msgstr "均一"
 
 #: server/settings.c:435
 msgid "Per-player, in order"
@@ -51203,19 +51157,19 @@ msgstr "死亡プレイヤーに全マップを開示"
 
 #: server/settings.c:537
 msgid "Allows units to be airlifted from allied cities"
-msgstr "同盟の都市からの空輸を許可する"
+msgstr "同盟国からの空輸を許可"
 
 #: server/settings.c:539
 msgid "Allows units to be airlifted to allied cities"
-msgstr "同盟の都市への空輸を許可する"
+msgstr "同盟国への空輸を許可"
 
 #: server/settings.c:541
 msgid "Unlimited units from source city"
-msgstr "都市から出発するユニット数を制限しない"
+msgstr "出発するユニットの数が無制限"
 
 #: server/settings.c:543
 msgid "Unlimited units to destination city"
-msgstr "都市に到着するユニット数を制限しない"
+msgstr "到着するユニットの数が無制限"
 
 #: server/settings.c:554
 msgid "All players move concurrently"
@@ -51456,17 +51410,16 @@ msgid ""
 "- \"Width and height\" (XYSIZE): Map width and height in tiles (options "
 "'xsize' and 'ysize')."
 msgstr ""
-"マップサイズの定義に使用する方法を選択します。各方法のパラメータは別のオプ"
-"ションで指定します。\n"
-"・\"タイル数\" (FULLSIZE): マップの大きさです(オプション 'size')。\n"
-"・\"プレイヤーごとのタイル数\" (PLAYER): プレイヤー1人あたりの（陸上）タイル"
-"数です(オプション 'tilesperplayer')。\n"
-"・\"幅と高さ\" (XYSIZE): マップの幅およびマップの高さ（単位はタイル数）です"
-"(オプション 'xsize' および 'ysize')。"
+"マップサイズの定義に使用する方法を選択します。\n"
+"各方法のパラメータは別の項目で設定します\n"
+"\n"
+"\"タイル数\" (FULLSIZE)：タイル数で定義します。\n"
+"\"プレイヤーあたりのタイル数\" (PLAYER)：プレイヤー1人あたりの（陸上）タイル数で定義します。\n"
+"\"幅と高さ\" (XYSIZE)：マップの幅と高さのタイル数で定義します。"
 
 #: server/settings.c:1498
 msgid "Map area (in thousands of tiles)"
-msgstr "  マップの大きさ（×1000タイル）"
+msgstr "  タイル数（×1000タイル）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51481,7 +51434,7 @@ msgid ""
 "For this option to take effect, the \"Map size definition\" option "
 "('mapsize') must be set to \"Number of tiles\" (FULLSIZE)."
 msgstr ""
-"この値はマップの大きさを決定するために使用されます。\n"
+"この値はマップサイズを決定するために使用されます。\n"
 "size=4は4,000タイルの通常のマップになります(既定値)。\n"
 "size=20は20,000タイルの巨大なマップになります。\n"
 "このオプションを有効にするには、「マップサイズの定義方法」オプション"
@@ -51489,7 +51442,7 @@ msgstr ""
 
 #: server/settings.c:1514
 msgid "Number of (land) tiles per player"
-msgstr "  プレイヤー1人あたりの(陸上)タイル数"
+msgstr "  プレイヤーあたりのタイル数"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51512,7 +51465,7 @@ msgstr ""
 
 #: server/settings.c:1531
 msgid "Map width in tiles"
-msgstr "  マップの幅(タイル数)"
+msgstr "  マップの幅（タイル数）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51531,7 +51484,7 @@ msgstr ""
 
 #: server/settings.c:1545
 msgid "Map height in tiles"
-msgstr "  マップの高さ(タイル数)"
+msgstr "  マップの高さ（タイル数）"
 
 #. TRANS: The strings between double quotes are also translated
 #. * separately (they must match!). The strings between single
@@ -51651,7 +51604,6 @@ msgstr "マップの生成方法"
 #. * translated. The strings between parentheses and in uppercase
 #. * must stay as untranslated.
 #: server/settings.c:1613
-#, fuzzy
 msgid ""
 "Specifies the algorithm used to generate the map. If the default value of "
 "the 'startpos' option is used, then the chosen generator chooses an "
@@ -51676,26 +51628,16 @@ msgid ""
 "If the requested generator is incompatible with other server settings, the "
 "server may fall back to another generator."
 msgstr ""
-"マップを生成する際に使用するアルゴリズムを指定します。'startpos'オプションで"
-"既定値（「ジェネレータの選択に任せる」）を使用する場合、ここで選択した生成方"
-"法に応じて適切な'startpos'設定が選択されます。使用しない場合は、選択し"
-"た'startpos'設定に出来る限り適応するようにマップが生成されます。\n"
-"・\"シナリオマップ\" (SCENARIO): あらかじめ作成済みのマップを使用します。既定"
-"では、シナリオで開始位置を指定していない場合は、大陸のサイズに応じて開始位置"
-"を決定します。\n"
-"・\"標高を完全ランダムにする\" (RANDOM): 同程度の大きさの比較的小さな島が多数"
-"あるマップを生成します。既定では、大陸のサイズに応じて開始位置を決定しま"
-"す。\n"
-"・\"標高を擬似フラクタルにする\" (FRACTAL): 1つ以上の大きな大陸と散在する小さ"
-"な島々からなる、地球によく似たマップを生成します。既定では、プレイヤーはすべ"
-"て1つの大陸に配置されます。\n"
-"・\"島ベースにする\" (ISLAND): サイズや形が同等で、地形タイプの比率もほぼ同じ"
-"複数の島からなる「公平」なマップを生成します。既定では、プレイヤーはそれぞれ"
-"自分の島を確保します。\n"
-"・ \"公平な島\" (FAIR): 全てのプレイヤーまたはチームが公平になるよう、完全に"
-"同一の島を生成します。\n"
-"指定した生成方法が他のサーバー設定に適合しない場合、サーバー側で別の生成方法"
-"に変更することがあります。"
+"開始地点の設定'startpos'がデフォルトの場合、選択されたマップの生成方法に応じて適切な'startpos'設定が選択されます。そうでない場合、可能な限り'startpos'設定に適応するようにマップが生成されます。\n"
+"\n"
+"\"シナリオマップ\" (SCENARIO)：事前に作成されたマップを使用します。シナリオで開始地点が設定されていない場合、デフォルトでは、開始地点は大陸の大きさに合わせて割り当てられます。\n"
+"\"標高を完全ランダムにする\" (RANDOM)：比較的小さな島がほぼ等間隔に多数あるマップを生成します。デフォルトでは、開始地点は島の大きさに合わせて割り当てられます。\n"
+"\"標高を擬似フラクタルにする\" (FRACTAL)：1つ以上の大陸と小さな島が散在する、地球のようなマップを生成します。デフォルトでは、開始地点はすべて1つの大陸に配置されます。\n"
+"\"島ベースにする\" (ISLAND)：大きさ、形、地形種の比率がすべてほぼ同じ島が複数ある、非常に公平なマップを生成します。デフォルトでは、開始地点は1つの島に最大1つ割り当てられ、プレイヤーはそれぞれ自分の島を持ちます。\n"
+"\"公平な島\" (FAIR): すべてのプレイヤーまたはチームに対して、完全に同じ島を生成します。\n"
+"\"割れ目マップ\" (FRACTURE)：割れ目のような地形のマップを生成します。大陸の端に沿って丘や山を配置する傾向があります。\n"
+"\n"
+"選択された生成方法と他のゲーム設定に互換性がない場合、生成方法が自動的に変更されることがあります。"
 
 # clefs
 #: server/settings.c:1643
@@ -51742,10 +51684,10 @@ msgstr ""
 "されます。\n"
 "・\"1つの大陸に全プレイヤー\" (ALL): すべてのプレイヤーが「最良」の大陸に配置"
 "されます。\n"
-"・\"大陸のサイズに合わせる\" (VALIABLE): プレイヤーを「最良」の大陸（複数）に"
-"配置します。その際、各大陸のプレイヤー数が大陸のサイズに出来る限り比例するよ"
+"・\"大陸の大きさに合わせる\" (VALIABLE): プレイヤーを「最良」の大陸（複数）に"
+"配置します。その際、各大陸のプレイヤー数が大陸の大きさに出来る限り比例するよ"
 "うにします。\n"
-"大陸のサイズに対してプレイヤー数が多すぎて要求された設定を満たせない場合、"
+"大陸の大きさに対してプレイヤー数が多すぎて要求された設定を満たせない場合、"
 "サーバー側で別の設定に変更する場合があります（ただしマップジェネレータでは、"
 "この'startpos'設定およびプレイヤー数に応じて出来る限り最適の個数の大陸を生成"
 "しようとしますから、設定が変更されることはめったにありません）。"
@@ -51945,14 +51887,13 @@ msgstr ""
 "そのものには影響しません。"
 
 #: server/settings.c:1825
-#, fuzzy
 #| msgid "Global warming"
 msgid "Global warming percent"
-msgstr "地球温暖化"
+msgstr "温暖化係数"
 
 #: server/settings.c:1826
 msgid "This is a multiplier for the rate of accumulation of global warming."
-msgstr ""
+msgstr "この値は、地球温暖化が発生する確率の蓄積速度を変化させる係数です。"
 
 #: server/settings.c:1834
 msgid "Nuclear winter"
@@ -51964,21 +51905,19 @@ msgid ""
 msgstr "オフにすると、核戦争による核の冬が発生しなくなります。"
 
 #: server/settings.c:1841
-#, fuzzy
 #| msgid "Nuclear winter"
 msgid "Nuclear winter percent"
-msgstr "核の冬"
+msgstr "核の冬係数"
 
 #: server/settings.c:1842
 msgid "This is a multiplier for the rate of accumulation of nuclear winter."
-msgstr ""
+msgstr "この値は、核の冬が発生する確率の蓄積速度を変化させる係数です。"
 
 #: server/settings.c:1855
 msgid "Map generation random seed"
-msgstr "マップ生成用のランダムシード"
+msgstr "マップのシード値"
 
 #: server/settings.c:1856
-#, fuzzy
 #| msgid ""
 #| "The same seed will always produce the same map; for zero (the default) a "
 #| "seed will be chosen based on the time to give a random map."
@@ -51987,21 +51926,19 @@ msgid ""
 "seed will be generated randomly, based on gameseed. If also gameseed is "
 "zero, the map will be completely random."
 msgstr ""
-"シード値が同じであれば、必ず同じマップが作成されます。0(既定値)の場合は時刻を"
-"基にシード値を選択するので、ランダムなマップが生成されます。"
+"マップのシード値が同じであれば、生成されるマップも同じになります。0（デフォルト）の場合、ゲームのシード値に基づいてランダムにマップのシード値が生成されます。ゲームのシード値も0の場合、マップは完全にランダムになります。"
 
 #: server/settings.c:1875
 msgid "Game random seed"
-msgstr "ゲームで使用するランダムシード"
+msgstr "ゲームのシード値"
 
 #: server/settings.c:1876
-#, fuzzy
 #| msgid ""
 #| "For zero (the default) a seed will be chosen based on the current time."
 msgid ""
 "For zero (the default) a seed will be chosen based on system entropy or, "
 "failing that, the current time."
-msgstr "0(既定値)の場合、シード値は現在時刻を基に選択されます。"
+msgstr "0（デフォルト）の場合、ゲームのシード値はシステムエントロピーを元に生成され、それができない場合は現在時刻を元に生成されます。"
 
 #: server/settings.c:1883
 msgid "Amount of \"special\" resource tiles"
@@ -52251,7 +52188,7 @@ msgstr ""
 # clefs
 #: server/settings.c:2073
 msgid "Technology cost multiplier percentage"
-msgstr "科学技術研究コストの係数(%)"
+msgstr "科学技術研究コストの係数 (%)"
 
 # clefs
 #: server/settings.c:2074
@@ -52261,7 +52198,7 @@ msgid ""
 "determined by the ruleset or other game settings."
 msgstr ""
 "これは、新しい科学技術をどのぐらい早く発見できるかに影響します。すべての科学"
-"技術のコストにはこの係数(%)がかけられます。係数をかける前の基本コストはルール"
+"技術のコストにはこの係数 (%)がかけられます。係数をかける前の基本コストはルール"
 "セットや他の設定により決定されます。"
 
 #: server/settings.c:2083
@@ -52275,10 +52212,13 @@ msgid ""
 "never transferred to new technology. Techpenalty options are ineffective "
 "after enabling that option."
 msgstr ""
+"この設定を有効にすると、研究中の科学技術に研究ポイントを残したまま、別の科学技術の研究を始めることができます。研究ポイントが新しい科学技術の研究に移行されることはありません。\n"
+"\n"
+"この設定を有効にすると、ゲーム設定「科学技術変更時のペナルティ」は効果がありません。"
 
 #: server/settings.c:2092
 msgid "Percentage penalty when changing tech"
-msgstr "科学技術を変更したときに受けるペナルティーの割合"
+msgstr "科学技術変更時のペナルティ"
 
 #: server/settings.c:2093
 msgid ""
@@ -52292,7 +52232,7 @@ msgstr ""
 
 #: server/settings.c:2102
 msgid "Chance to lose a technology while receiving it"
-msgstr "科学技術を受け取る際に失われる確率(%)"
+msgstr "科学技術を受け取る際に失われる確率 (%)"
 
 #: server/settings.c:2103
 msgid "The chance that learning a technology by treaty or theft will fail."
@@ -52302,7 +52242,7 @@ msgstr ""
 
 #: server/settings.c:2110
 msgid "Chance to lose a technology while giving it"
-msgstr "科学技術を与える際に失われる確率(%)"
+msgstr "科学技術を与える際に失われる確率 (%)"
 
 #: server/settings.c:2111
 msgid ""
@@ -52314,7 +52254,7 @@ msgstr ""
 
 #: server/settings.c:2119
 msgid "Tech leakage percent"
-msgstr ""
+msgstr "科学技術の漏洩率"
 
 #: server/settings.c:2120
 msgid ""
@@ -52322,6 +52262,9 @@ msgid ""
 "who know the tech tell which percentage of tech's bulb cost gets leaked each "
 "turn. This setting has no effect if the ruleset has disabled tech leakage."
 msgstr ""
+"この値に、当該科学技術を獲得しているプレイヤーの割合を掛けた値の割合だけ、その科学技術を新しく研究するのに必要な研究ポイントが減少します。\n"
+"\n"
+"ルールセットが科学技術の漏洩を無効にしている場合、この設定は効果がありません。"
 
 #: server/settings.c:2130
 msgid "Team pooled research"
@@ -52332,13 +52275,12 @@ msgid ""
 "If this setting is turned on, then the team mates will share the science "
 "research. Else, every player of the team will have to make its own."
 msgstr ""
-"この設定がオンになっている場合は、チームが科学技術研究を共有します。オフの場"
-"合、プレイヤーはそれぞれ独自に研究する必要があります。"
+"この設定を有効にすると、チームメンバーは科学技術を共同で研究します。\n"
+"無効にすると、プレイヤーはそれぞれ独自に研究します。"
 
-# clefs
 #: server/settings.c:2138
 msgid "Penalty when getting tech from treaty"
-msgstr "条約により科学技術を得たときのペナルティー"
+msgstr "条約により科学技術を得たときのペナルティ"
 
 #: server/settings.c:2139
 msgid ""
@@ -52351,10 +52293,9 @@ msgstr ""
 "トを失います。この値が0以外の場合、研究ポイントがマイナスになることもありま"
 "す。"
 
-# clefs
 #: server/settings.c:2148
 msgid "Penalty when getting gold from treaty"
-msgstr "条約により金を得たときのペナルティー"
+msgstr "条約により金を得たときのペナルティ"
 
 #: server/settings.c:2149
 msgid ""
@@ -52367,18 +52308,18 @@ msgstr ""
 
 #: server/settings.c:2157
 msgid "Probability of gold loss during inciting revolt"
-msgstr ""
+msgstr "反乱扇動時に金を失う確率"
 
 #: server/settings.c:2158
 msgid ""
 "When unit trying to incite revolt is eliminated, half of the gold (or "
 "quarter, if unit was caught), prepared to bribe citizens, can be lost or "
 "captured by enemy."
-msgstr ""
+msgstr "反乱を扇動しようとしたユニットが排除された場合、市民に賄賂として用意された金の半分（ユニットが逮捕された場合は4分の1）を失うか、敵に奪われることがあります。"
 
 #: server/settings.c:2167
 msgid "Probability of gold capture during inciting revolt"
-msgstr ""
+msgstr "反乱扇動時に金が奪われる確率"
 
 #: server/settings.c:2168
 msgid ""
@@ -52386,11 +52327,11 @@ msgid ""
 "chance that this gold would be captured by city defender. Transfer tax would "
 "be applied, though. This setting is irrevelant, if incite_gold_loss_chance "
 "is zero."
-msgstr ""
+msgstr "反乱を扇動しようとしたユニットが排除され、金を失った場合、この金は反乱を防いだ敵に奪われることがあります。ただし、ゲーム設定「条約により金を得たときのペナルティ」が適用されます。ゲーム設定「反乱扇動時に金を失う確率」が0である場合、この設定は効果がありません。"
 
 #: server/settings.c:2178
 msgid "Penalty when getting tech from conquering"
-msgstr "征服により科学技術を得た時のペナルティー"
+msgstr "征服により科学技術を得た時のペナルティ"
 
 #: server/settings.c:2179
 msgid ""
@@ -52403,10 +52344,9 @@ msgstr ""
 "イントを失います。この値が0以外の場合、研究ポイントがマイナスになることもあり"
 "ます。"
 
-# Belgae
 #: server/settings.c:2189
 msgid "Penalty when getting a free tech"
-msgstr "無償で科学技術を得た時のペナルティー"
+msgstr "無償で科学技術を得た時のペナルティ"
 
 #. TRANS: The strings between single quotes are setting names and
 #. * shouldn't be translated.
@@ -52426,7 +52366,7 @@ msgstr ""
 
 #: server/settings.c:2203
 msgid "Research point debt threshold for losing tech"
-msgstr "負の研究ポイントにより科学技術が失われる閾値(%)"
+msgstr "負の研究ポイントにより科学技術が失われる閾値 (%)"
 
 #: server/settings.c:2204
 msgid ""
@@ -52443,7 +52383,7 @@ msgstr ""
 
 #: server/settings.c:2215
 msgid "Research points restored after losing a tech"
-msgstr "科学技術を失った後に受け取る研究ポイントの割合(%)"
+msgstr "科学技術を失った後に受け取る研究ポイントの割合 (%)"
 
 #: server/settings.c:2216
 msgid ""
@@ -52541,7 +52481,7 @@ msgstr ""
 
 #: server/settings.c:2292
 msgid "How largely trade distance is relative to world size"
-msgstr ""
+msgstr "交易路の相対的な長さと収入の関係"
 
 #. TRANS: The strings between single quotes are setting names and
 #. * shouldn't be translated.
@@ -52552,6 +52492,9 @@ msgid ""
 "the bonus calculation is relative to world size, and how much only absolute "
 "distance matters."
 msgstr ""
+"交易路からの収入を決定する計算における距離の係数を、マップサイズに対して部分的または完全に相対的なものとすることができます。\n"
+"\n"
+"この値は、収入を決定する計算において、マップサイズに対する交易路の長さの割合と、交易路の長さの絶対値との、どちらがどれだけ重要になるかを設定します。"
 
 #: server/settings.c:2307
 msgid "Minimum distance between cities"
@@ -52595,10 +52538,9 @@ msgid "If turned off, trading cities in the diplomacy dialog is not allowed."
 msgstr "オフにすると、外交ダイアログで都市の授受ができなくなります。"
 
 #: server/settings.c:2341
-#, fuzzy
 #| msgid "Caravan actions"
 msgid "Caravan bonus style"
-msgstr "キャラバン活動"
+msgstr "キャラバンボーナスの計算式"
 
 #: server/settings.c:2342
 msgid ""
@@ -52607,12 +52549,16 @@ msgid ""
 "multipliers for overseas and international destinations. LOGARITHMIC bonuses "
 "are proportional to log^2(distance + trade)."
 msgstr ""
+"交易ユニットが交易を行ったときに得られるボーナスの計算式を選択します。\n"
+"\n"
+"デフォルトの計算式では、交易が行われる2都市間の距離と、この2都市における交易ポイントの産出量に比例し、国や海をまたいだ交易の場合には倍率がかかります。\n"
+"\n"
+"log^2 Nの計算式では、log^2(距離+交易ポイント)に比例します。"
 
 #: server/settings.c:2352
-#, fuzzy
 #| msgid "Trade routes: "
 msgid "Trade revenue style"
-msgstr "交易路: "
+msgstr "交易路収入の計算式"
 
 #: server/settings.c:2353
 msgid ""
@@ -52621,6 +52567,11 @@ msgid ""
 "between them, with multipliers for overseas and international routes. SIMPLE "
 "revenues are proportional to the average trade of the two cities."
 msgstr ""
+"都市が交易路から受け取る収入の計算式を選択します。\n"
+"\n"
+"デフォルトの計算式では、交易が行われる2都市の大きさの合計とその間の距離に比例し、国や海をまたいだ交易の場合には倍率がかかります。\n"
+"\n"
+"「タイルが産出する交易ポイントに比例」では、交易が行われる2都市における交易ポイントの産出量の平均に比例します。"
 
 #: server/settings.c:2364
 msgid "Minimum distance for trade routes"
@@ -52668,11 +52619,11 @@ msgstr ""
 
 #: server/settings.c:2398
 msgid "AI trait distribution method"
-msgstr ""
+msgstr "AI特性の分布方法"
 
 #: server/settings.c:2399
 msgid "How trait values are given to AI players."
-msgstr ""
+msgstr "AIに特性を分布する方法を選択します。"
 
 # yasu
 #: server/settings.c:2404
@@ -52764,7 +52715,6 @@ msgid "National borders"
 msgstr "国境線"
 
 #: server/settings.c:2463
-#, fuzzy
 msgid ""
 "If this is not disabled, then any land tiles around a city or border-"
 "claiming extra (like the classic ruleset's Fortress base) will be owned by "
@@ -52772,9 +52722,11 @@ msgid ""
 "borders visible at once. ENABLED will, in some rulesets, grant the same "
 "visibility if certain conditions are met."
 msgstr ""
-"無効以外の場合、都市周辺の陸地タイルや、国境線をもたらす効果を持つ"
-"extra(classicルールセットにおける要塞など)があるタイルは、その民族に帰属しま"
-"す。"
+"この設定が無効でない場合、都市や国境線を拡大する地形特徴（Classicルールセットにおける要塞等）の周囲にある陸上タイルは、すべてその都市や地形特徴を所有する国が合わせて所有します。\n"
+"\n"
+"「国境線内全域が視界」か「未知の領域にも国境線を拡張し、線内全域が視界」にすると、国境の内側がすべて視界に入ります。\n"
+"\n"
+"「有効」にすると、ルールセットによっては、特定の条件の下で国境線の内側が視界に入ります。"
 
 #: server/settings.c:2474
 msgid "Units inside borders cause no unhappiness"
@@ -52964,7 +52916,6 @@ msgstr "空輸の条件"
 #. * between parenthesis and in uppercase must not be
 #. * translated.
 #: server/settings.c:2619
-#, fuzzy
 #| msgid ""
 #| "This setting affects airlifting units between cities. It can be a set of "
 #| "the following values:\n"
@@ -52988,21 +52939,21 @@ msgid ""
 "city doesn't reduce the airlifted counter. It depends on the ruleset whether "
 "this is possible even with zero airlift capacity."
 msgstr ""
-"この設定は都市間でのユニットの空輸に影響します。以下の値の組み合わせで設定し"
-"ます。\n"
-"- \"同盟の都市からの空輸を許可する\" (FROM_ALLIES)\n"
-"- \"同盟の都市への空輸を許可する\" (TO_ALLIES)\n"
-"- \"都市から出発するユニット数を制限しない\" (SRC_UNLIMITED) 注：都市からユ"
-"ニットを空輸しても空輸カウンターは減少しなくなりますが、最低1必要なのは変わり"
-"ません。\n"
-"- \"都市に到着するユニット数を制限しない\" (DEST_UNLIMITED) 注：都市へユニッ"
-"トを空輸しても空輸カウンターは減少しなくなりますが、最低1必要なのは変わりませ"
-"ん。"
+"この設定は都市間におけるユニットの空輸に影響します。\n"
+"以下の値を設定することができます。\n"
+"\n"
+"\"同盟国からの空輸を許可\" (FROM_ALLIES)\n"
+"\"同盟国への空輸を許可\" (TO_ALLIES)\n"
+"\"出発ユニット数が無制限\" (SRC_UNLIMITED)\n"
+"\"到着ユニット数が無制限\" (DEST_UNLIMITED)\n"
+"\n"
+"ユニット数を無制限にすると、空輸カウンターが減少しなくなります。\n"
+"ただし、カウンターが0でも空輸が可能かどうかはルールセットによります。"
 
 # clefs
 #: server/settings.c:2638
 msgid "Base chance for diplomats and spies to succeed"
-msgstr "外交官・スパイの基本成功確率"
+msgstr "外交官とスパイの基本成功確率"
 
 #: server/settings.c:2639
 msgid ""
@@ -53013,6 +52964,9 @@ msgid ""
 "do. Non-aggressive missions typically have no base chance at all, but always "
 "success."
 msgstr ""
+"外交官とスパイが実行する攻撃的な任務の基本成功確率と、スパイが任務に成功して帰還する基本確率です。\n"
+"\n"
+"すべての任務に適用されるわけではありません。ユニットに対する買収や破壊工作等には適用されません。通常、攻撃的でない任務は常に成功します。"
 
 #: server/settings.c:2652
 msgid "What kinds of victories are possible"
@@ -53024,7 +52978,6 @@ msgstr "勝利条件"
 #. * strings between parentheses and in uppercase must stay as
 #. * untranslated.
 #: server/settings.c:2658
-#, fuzzy
 #| msgid ""
 #| "This setting controls how game can be won. One can always win by "
 #| "conquering entire planet, but other victory conditions can be enabled or "
@@ -53047,15 +53000,30 @@ msgid ""
 "- \"World Peace\" (WORLDPEACE): There's no wars in the world for the "
 "specified amount of turns.\n"
 msgstr ""
-"ゲームの勝者を決定する方法を設定します。他の全ての文明を滅ぼし、世界征服を果"
-"たしたプレイヤーは必ず勝利しますが(｢征服勝利｣)、それ以外の勝利条件を有効また"
-"は無効にすることができます。 :\n"
-"- \"科学勝利\" (SPACERACE): 建造した宇宙船を打ち上げ、アルファ・ケンタウリへ"
-"と到達させる。\n"
-"- \"同盟勝利\" (ALLIED): 敵国を全て滅ぼし、同盟を結んだプレイヤーだけが生き残"
-"る。\n"
-"- \"文化勝利\" (CULTURE): ルールセットが定義する基準 (最低値および2位との差) "
-"を満たす文化を生み出す。\n"
+"世界征服を果たせば必ず勝利しますが、他の勝利条件を設定することもできます。\n"
+"\n"
+"- 科学勝利 (SPACERACE)：宇宙船を建造し、アルファ・ケンタウリに到達させる。\n"
+"- 同盟勝利 (ALLIED)：同盟の関係にない民族をすべて征服する。\n"
+"- 文化勝利 (CULTURE)：ルールセットが定義する基準を満たす文化ポイントを生み出す。\n"
+"- 平和勝利 (WORLDPEACE)：指定されたターンの間、世界で戦争が起こらない。\n"
+
+# NOTE: 手動で追加した項目
+msgid ""
+"This setting controls how game can be won. One can always win by "
+"conquering entire planet, but other victory conditions can be enabled or "
+"disabled:\n"
+"- \"Spacerace\" (SPACERACE): Spaceship is built and travels to Alpha "
+"Centauri.\n"
+"- \"Allied\" (ALLIED): After defeating enemies, all remaining players are "
+"allied.\n"
+"- \"Culture\" (CULTURE): Player meets ruleset defined cultural domination "
+"criteria.\n"
+msgstr ""
+"世界征服を果たせば必ず勝利しますが、他の勝利条件を設定することもできます。\n"
+"\n"
+"- 科学勝利 (SPACERACE)：宇宙船を建造し、アルファ・ケンタウリに到達させる。\n"
+"- 同盟勝利 (ALLIED)：同盟の関係にない民族をすべて征服する。\n"
+"- 文化勝利 (CULTURE)：ルールセットが定義する基準を満たす文化ポイントを生み出す。\n"
 
 #: server/settings.c:2673
 msgid "Should the game end if the spaceship arrives?"
@@ -53071,10 +53039,9 @@ msgstr ""
 
 #: server/settings.c:2681
 msgid "Percentage to multiply spaceship travel time by"
-msgstr ""
+msgstr "宇宙船の移動時間の係数 (%)"
 
 #: server/settings.c:2682
-#, fuzzy
 #| msgid ""
 #| "If this option is turned on, the game will end with the arrival of a "
 #| "spaceship at Alpha Centauri."
@@ -53082,8 +53049,7 @@ msgid ""
 "This percentage is multiplied onto the time it will take for a spaceship to "
 "arrive at Alpha Centauri."
 msgstr ""
-"このオプションをオンにした場合、アルファ・ケンタウリに宇宙船が到達した時点で"
-"ゲームは終了します。"
+"この値は百分率で、宇宙船がアルファ・ケンタウリに移動する時間が、デフォルトの場合と比較してどれほど異なるかを示します。"
 
 #: server/settings.c:2690
 msgid "Minimum number of cities for civil war"
@@ -53111,10 +53077,9 @@ msgstr "この設定を有効にすると、敵ユニットは交通路を利用
 
 #: server/settings.c:2709
 msgid "Does unreachable unit protect reachable ones"
-msgstr "射程外ユニットによる射程内ユニットの防衛"
+msgstr "射程外のユニットによる防衛"
 
 #: server/settings.c:2710
-#, fuzzy
 #| msgid ""
 #| "This option controls whether tiles with both unreachable and reachable "
 #| "units can be attacked. If disabled, any tile with reachable units can be "
@@ -53127,9 +53092,9 @@ msgid ""
 "units in some rulesets may override this, never protecting reachable units "
 "on their tile."
 msgstr ""
-"このオプションは、射程外ユニットと射程内ユニットの両方がいるタイルを攻撃可能"
-"かどうかを制御します。無効の場合、射程内ユニットがいるタイルは攻撃可能です。"
-"有効の場合、射程外ユニットがいるタイルには攻撃できません。"
+"この設定を有効にすると、射程外のユニットと射程内のユニットとの両方が存在するタイルを攻撃することできなくなります。無効にすると、このようなタイルも攻撃することができます。\n"
+"\n"
+"ルールセットによっては、この設定を上書きし、この設定を有効にしても射程内のユニットを守らない射程外のユニットが存在します。"
 
 #: server/settings.c:2721
 msgid "Turns until player contact is lost"
@@ -53223,7 +53188,7 @@ msgstr ""
 
 #: server/settings.c:2785
 msgid "Number of turns between migrations from a city"
-msgstr "　移民が発生するターン間隔"
+msgstr "  移民が発生するターン間隔"
 
 #. TRANS: Do not translate 'migration' setting name.
 #: server/settings.c:2787
@@ -53243,7 +53208,7 @@ msgstr ""
 
 #: server/settings.c:2802
 msgid "Whether migration is limited by food"
-msgstr "　移民を食料によって制限する"
+msgstr "  移民を食料によって制限する"
 
 #. TRANS: Do not translate 'migration' setting name.
 #: server/settings.c:2804
@@ -53258,11 +53223,10 @@ msgstr ""
 
 #: server/settings.c:2813
 msgid "Maximum distance citizens may migrate"
-msgstr "　移民対象都市までの最大距離"
+msgstr "  移民対象都市までの最大距離"
 
 #. TRANS: Do not translate 'migration' setting name.
 #: server/settings.c:2815
-#, fuzzy
 #| msgid ""
 #| "This setting controls how far citizens may look for a suitable migration "
 #| "destination when deciding which city to migrate to. The value is added to "
@@ -53279,14 +53243,13 @@ msgid ""
 "center is within the destination city's working radius.) This setting has no "
 "effect unless migration is enabled by the 'migration' setting."
 msgstr ""
-"この設定は、市民が移民先の都市を決定する際に、どれだけ遠くまで探すかを制御し"
-"ます。現在の移民元の都市圏半径にこの値を加えたものと、2都市間の距離を比較しま"
-"す。距離が合計値以下の場合に、移民が可能となります。この設定は、「migration」"
-"の設定が有効になっていない場合には何も影響を与えません。"
+"この値は、どの程度遠くまで移住することができるかを示します。\n"
+"この値は、移住先の都市の都市圏の半径に加算され、移住元の都市から移住先の都市までの距離と比較されます。距離の方が小さいか等しい場合、移住することができます。（つまり、0に設定すると、移住元の都市の中心が移住先の都市の都市圏の内にある場合にのみ、移住することができます。）\n"
+"設定「移民を有効にする」によって移民が有効になっていない場合、この設定は適用されません。"
 
 #: server/settings.c:2831
 msgid "Percent probability for migration within the same nation"
-msgstr "　自国内の都市に移民する確率"
+msgstr "  自国内の都市に移民する確率"
 
 #. TRANS: Do not translate 'migration' setting name.
 #: server/settings.c:2833
@@ -53304,7 +53267,7 @@ msgstr ""
 
 #: server/settings.c:2846
 msgid "Percent probability for migration between foreign cities"
-msgstr "　他国の都市に移民する確率"
+msgstr "  他国の都市に移民する確率"
 
 #. TRANS: Do not translate 'migration' setting name.
 #: server/settings.c:2848
@@ -53425,14 +53388,13 @@ msgstr ""
 
 #: server/settings.c:2937
 msgid "Maximum seconds per turn"
-msgstr "ターンの最大秒数"
+msgstr "ターンの制限時間"
 
 #. TRANS: \"Turn Done\" refers to the client button; it is also
 #. * translated separately, the translation should be the same.
 #. * \"timeoutincrease\" is a command name and must not to be
 #. * translated.
 #: server/settings.c:2942
-#, fuzzy
 msgid ""
 "If all players have not hit \"Turn Done\" before this time is up, then the "
 "turn ends automatically. Zero means there is no timeout. In servers compiled "
@@ -53442,12 +53404,11 @@ msgid ""
 "timer. The first turn is treated as a special case and is controlled by the "
 "'first_timeout' setting."
 msgstr ""
-"プレイヤー全員が「ターン終了」せずとも、この時間が経過した時点で自動的にター"
-"ンが終了します。0は制限時間なしを意味します。デバッグサーバーでは、タイムアウ"
-"トを-1にセットすると、autogameテストモードになります。制限時間を30秒未満に設"
-"定することができるのは、アクセスレベルhackで接続しているユーザーのみです。こ"
-"の変数とコマンド \"timeoutincrease\" を併用して動的なタイマー制御を実現できま"
-"す。最初のターンだけは例外で、'first_timeout'設定に従います。"
+"この値（秒）の時間が経過するまでにすべてのプレイヤーが「ターン終了」を押さなければ、そのターンは自動的に終了します。最初のターンの制限時間は個別に設定することができます。\n"
+"\n"
+"この値が0のとき、ターンに制限時間はありません。また、デバッグ用にコンパイルされたサーバーでは、この値が-1のとき、自動ゲームのテストモードになります。\n"
+"\n"
+"ハックレベルのアクセス権を持つユーザーのみがこの値を30未満にすることができます。また、この値と\"timeoutincrease\"コマンドを一緒に使用することで、動的な制限時間を設定することができます。"
 
 #: server/settings.c:2956
 msgid "First turn timeout"
@@ -53456,17 +53417,15 @@ msgstr "最初のターンの制限時間"
 #. TRANS: The strings between single quotes are setting names and
 #. * should not be translated.
 #: server/settings.c:2959
-#, fuzzy
 msgid ""
 "If greater than 0, T1 will last for 'first_timeout' seconds.\n"
 "If set to 0, T1 will not have a timeout.\n"
 "If set to -1, the special treatment of T1 will be disabled.\n"
 "See also 'timeout'."
 msgstr ""
-"値が1以上のとき、最初のターン（T0）の制限時間がその秒数になります。\n"
-"0のときは、最初のターンは制限時間なしとなります。\n"
-"-1のときは、最初のターンも'timeout'設定の例外とはせず、そちらの設定に従いま"
-"す。"
+"この値が0より大きいとき、最初のターンの制限時間はこの値（秒）です。\n"
+"0のとき、最初のターンに制限時間はありません。\n"
+"-1のとき、最初のターンの制限時間は、以降のターンの制限時間と同じになります。"
 
 #: server/settings.c:2969
 msgid "Timeout at least n seconds when enemy moved"
@@ -53725,9 +53684,8 @@ msgstr ""
 "- \"指定時間ごと\" (TIMER) : 'savefrequency' で設定された時間ごと。"
 
 #: server/settings.c:3150
-#, fuzzy
 msgid "Whether to do saving in separate thread"
-msgstr "極地を大陸から離す"
+msgstr "別スレッドで保存"
 
 #. TRANS: The string between single quotes is a setting name and
 #. * should not be translated.
@@ -53736,7 +53694,7 @@ msgid ""
 "If this is turned in, compressing and saving the actual file containing the "
 "game situation takes place in the background while game otherwise continues. "
 "This way users are not required to wait for the save to finish."
-msgstr ""
+msgstr "この設定を有効にすると、セーブファイルがバックグラウンドで作成されます。これにより、ゲームを保存するときにプレイが中断されません。"
 
 #: server/settings.c:3161
 msgid "Savegame compression level"
@@ -53871,22 +53829,16 @@ msgid ""
 msgstr ""
 
 #: server/settings.c:3264
-#, fuzzy
 msgid "Metaserver info line"
-msgstr "公開サーバー情報行を設定します。"
+msgstr "公開サーバーの情報ライン"
 
 #: server/settings.c:3265
-#, fuzzy
 msgid ""
 "User defined metaserver info line. For most of the time a user defined "
 "metamessage will be used instead of an automatically generated message. Set "
 "to empty (\"\", not \"empty\") to always use an automatically generated meta "
 "server message."
-msgstr ""
-"ユーザー定義の公開サーバー情報行を設定します。パラメータを省略した場合は、以"
-"前に設定されたメタメッセージが削除されます。ほとんどの状況において、ユーザー"
-"定義のメタメッセージが（使用できるところで）自動生成メッセージに代わって使用"
-"されます。"
+msgstr "ユーザーが定義する公開サーバーの情報ライン。ほとんどの場合、自動生成されたメッセージではなく、ユーザーに定義されたメッセージが使用されます。常に自動生成されたメッセージを使用するには、この値を空にします。"
 
 #: server/settings.c:3274
 msgid "Level of new AIs"
@@ -54641,7 +54593,7 @@ msgstr "サーバーオプション通りのマップを生成することがで
 #: server/srv_main.c:3373 server/srv_main.c:3377
 #, c-format
 msgid "Setting '%s' has been adjusted from %s to %s."
-msgstr "サーバーオプション '%s' は'%s'から'%s'に変更されました。"
+msgstr "ゲーム設定'%s'は %sから %sに変更されました。"
 
 #: server/srv_main.c:3584
 #, c-format
@@ -55519,7 +55471,7 @@ msgstr "パラメータ %sには +-および 0-9以外の文字は使用でき�
 #: server/stdinhand.c:3113
 #, c-format
 msgid "Console: '%s' has been set to %s."
-msgstr "コンソール: '%s' は %sに設定されました。"
+msgstr "コンソール: '%s'は %sに設定されました。"
 
 #: server/stdinhand.c:3215
 msgid "You cannot take a new player at this time."
@@ -58811,7 +58763,7 @@ msgstr ""
 #~ "bigger."
 #~ msgstr ""
 #~ "裁判所はまた、1人の不幸市民を平静にします（ただし戦闘ユニットが原因の者に"
-#~ "は効果がありません）。加えて敵の外交官による反乱の煽動に対し、その費用を4"
+#~ "は効果がありません）。加えて敵の外交官による反乱の扇動に対し、その費用を4"
 #~ "倍に増加させます。"
 
 #~ msgid "Allows Workers and Engineers to build airstrips, airbases and buoys."
@@ -58857,13 +58809,13 @@ msgstr ""
 #~ "capital, or in any city governed by a Federation or Democracy. Incitement "
 #~ "may be attempted in peacetime, but will cause a diplomatic incident."
 #~ msgstr ""
-#~ "・「反乱の煽動」:ある程度の資金を投入し、敵国の都市を離叛させ、あなたの帝"
+#~ "・「反乱の扇動」:ある程度の資金を投入し、敵国の都市を離叛させ、あなたの帝"
 #~ "国に編入します。ただし混乱に伴い都市の人口が1減少します。また都市に所属す"
 #~ "るユニットも共に編入されます。他の都市内にいる所属ユニットは反乱には参加せ"
 #~ "ず、敵国のユニットとして残ります。都市の外にいる所属ユニットは失われ、どち"
 #~ "らのプレイヤーのものにもなりません。必要な経費は都市および都市を所有する文"
 #~ "明のステータスによって決まります。首都と、民主主義および連邦制国家の全都市"
-#~ "では反乱を煽動することができません。平時においても試みることができますが、"
+#~ "では反乱を扇動することができません。平時においても試みることができますが、"
 #~ "事変を引き起こします。"
 
 #~ msgid "Clean fallout"
@@ -58893,25 +58845,29 @@ msgstr ""
 #~ msgid "Using bzip2 (deprecated)"
 #~ msgstr "bzip2を使用する"
 
-#~ msgid "Whether there's just one pole generated"
-#~ msgstr "マップの片側だけに極地を生成する"
+# NOTE: 手動でコメントアウトを解除した項目
+msgid "Whether there's just one pole generated"
+msgstr "マップの片側だけに極地を生成する"
 
-#~ msgid ""
-#~ "If this setting is enabled, only one side of the map will have a pole. "
-#~ "This setting has no effect if the map wraps both directions."
-#~ msgstr ""
-#~ "この設定を有効にすると、極地はマップの片側にのみ生成されるようになります。"
-#~ "ただし東西・南北の両方向に循環するマップには適用されません。"
+# NOTE: 手動でコメントアウトを解除した項目
+msgid ""
+"If this setting is enabled, only one side of the map will have a pole. "
+"This setting has no effect if the map wraps both directions."
+msgstr ""
+"この設定を有効にすると、マップの片側だけに極地が生成されます。\n"
+"ただし、東西・南北の両方向がつながっているマップには、この設定が適用されません。"
 
-#~ msgid "All the map is temperate"
-#~ msgstr "マップ全域を温帯とする"
+# NOTE: 手動でコメントアウトを解除した項目
+msgid "All the map is temperate"
+msgstr "マップの全域を温帯にする"
 
-#~ msgid ""
-#~ "If this setting is enabled, the temperature will be equivalent everywhere "
-#~ "on the map. As a result, the poles won't be generated."
-#~ msgstr ""
-#~ "この設定を有効にすると、マップのどこでも気温が同じになります。その結果、極"
-#~ "地が生成されなくなります。"
+# NOTE: 手動でコメントアウトを解除した項目
+msgid ""
+"If this setting is enabled, the temperature will be equivalent everywhere "
+"on the map. As a result, the poles won't be generated."
+msgstr ""
+"この設定を有効にすると、マップの全域が同じ気温になります。\n"
+"これにより、極地が生成されなくなります。"
 
 #, fuzzy
 #~| msgid "The name of the chat log file."
@@ -60300,7 +60256,7 @@ msgstr ""
 #~ msgstr "%sはあなたから技術を盗もうとして事変を引き起こしました。"
 
 #~ msgid "You have caused an incident while inciting a revolt in %s."
-#~ msgstr "%sで反乱を煽動する試みは事変に発展しました。"
+#~ msgstr "%sで反乱を扇動する試みは事変に発展しました。"
 
 #~ msgid "You have caused an incident while stealing gold from %s."
 #~ msgstr "%sから金を盗む試みは事変に発展しました。"
@@ -60794,7 +60750,7 @@ msgstr ""
 #~ msgstr "科学技術を盗む(_T)"
 
 #~ msgid "Incite a _Revolt"
-#~ msgstr "反乱の煽動(_R)"
+#~ msgstr "反乱の扇動(_R)"
 
 #~ msgid "Industrial _Sabotage"
 #~ msgstr "破壊工作(_S)"
@@ -61136,7 +61092,7 @@ msgstr ""
 #~ msgstr "%sは買収できません！"
 
 #~ msgid "You can't subvert this city."
-#~ msgstr "この都市は煽動転覆できません。"
+#~ msgstr "この都市は扇動転覆できません。"
 
 #~ msgid ""
 #~ "Cannot modify specials for the tile %s because %d is not a valid terrain "
@@ -61869,7 +61825,7 @@ msgstr ""
 #~ "the capital, for the purpose of calculating revolt cost."
 #~ msgstr ""
 #~ "都市での汚職を50%減らします。民主主義下では、不幸市民1を平静にします。ま"
-#~ "た、反乱煽動費用を計算する際に、首都からの距離を実際の半分と見なします。"
+#~ "た、反乱扇動費用を計算する際に、首都からの距離を実際の半分と見なします。"
 
 #~ msgid ""
 #~ "Reduces the corruption and waste in a city by 50%.  Under a Democracy, a "
@@ -61878,7 +61834,7 @@ msgstr ""
 #~ "the capital, for the purpose of calculating revolt cost."
 #~ msgstr ""
 #~ "都市での汚職と浪費を50%減らします。民主主義下では、不幸市民1を平静にします"
-#~ "（軍事活動にともなう不幸市民には効果がありません）。また、反乱煽動費用を計"
+#~ "（軍事活動にともなう不幸市民には効果がありません）。また、反乱扇動費用を計"
 #~ "算する際に、首都からの距離を実際の半分と見なします。"
 
 #~ msgid "Default ruleset"
