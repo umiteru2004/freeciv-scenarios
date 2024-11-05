@@ -30,7 +30,7 @@ summary = _("本ルールセットについては、ゲーム内ヘルプおよ�
 description = *umi/README.md*
 
 ; ルールセットがシナリオに提供する能力
-; 能力の定義についてはdoc/README.rulesetsを参照してください。
+; 能力についてはdoc/README.rulesetsを参照してください。
 ; std-terrains: 標準的な地形セット
 capabilities = "std-terrains"
 
@@ -39,18 +39,18 @@ global_init_techs=""
 global_init_buildings="Palace"
 
 [tileset]
-; If preferred tileset is set, clients that support the feature will suggest
-; using that tileset with the ruleset.
+; 優先するタイルセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたタイルセットを使用することを提案します。
 ; preferred = ""
 
 [soundset]
-; If preferred soundset is set, clients that support the feature will suggest
-; using that soundset with the ruleset.
+; 優先するサウンドセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたサウンドセットを使用することを提案します。
 ; preferred = ""
 
 [musicset]
-; If preferred musicset is set, clients that support the feature will suggest
-; using that musicset with the ruleset.
+; 優先するBGMセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたBGMセットを使用することを提案します。
 ; preferred = ""
 
 [civstyle]
