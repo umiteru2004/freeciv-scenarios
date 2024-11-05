@@ -1,61 +1,37 @@
-; Modifying this file:
-; You should not modify this file except to make bugfixes or
-; for other "maintenance".  If you want to make custom changes,
-; you should create a new datadir subdirectory and copy this file
-; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
-; use your new customized file.
-
-; Note that the freeciv AI may not cope well with anything more
-; than minor changes.
+; AIが正常に動作しなくなる可能性があるため、ルールセットを大幅に変更することは避けてください。
 
 [datafile]
-description="Civ2Civ3 game rules for Freeciv"
+description="Umi game rules for Freeciv"
 options="+Freeciv-3.1-ruleset web-compatible"
 format_version=20
 
-; This section contains meta information for freeciv-ruledit to recreate the ruleset
-; file in a form wanted. These have no in-game effect whatsoever
+; このセクションには、freeciv-ruleditがルールセットファイルを再生成するための情報が含まれています。
+; これらはゲームにおいては何の効果もありません。
 [ruledit]
 
-; Which file to read description in from.
-description_file = "civ2civ3/README.civ2civ3"
+; ゲーム内ヘルプに表示される説明ファイルの場所
+description_file = "umi/README.md"
 
 [about]
-; Ruleset name
-name = _("Civ2Civ3 ruleset")
+; ルールセットの名前
+name = _("Umi ruleset")
 
-; There`s no separate versioning in rulesets part of main freeciv distribution
 ;version = ""
 
-; When about to migrate ruleset under a new name in the future version, set
-; alt_dir to the name of that future directory. Then savegames saved with this
-; version of freeciv can find the ruleset from the correct place when loading
-; the savegame to the future version.
+; 将来、ルールセットの名前を変更する予定がある場合、alt_dirに変更後のディレクトリの名前を設定します。
+; これにより、変更前にセーブしたゲームを変更後にロードするときに、正常にルールセットを読み込むことができます。
 ;alt_dir = ""
 
-; Summary of the ruleset
-; /* TRANS: In the client, this is displayed alongside the contents of
-;    README.civ2civ3, which are not localized. */
-summary = _("\
-You are playing Freeciv with civ2civ3 rules:\
-\n\n\
-Gameplay more similar to civ3, keeping the combat system from civ2.\
-\n\n\
-Adapted for single player, with AI less aggressive at start,\
- but more challenging at the end.\
-\n\n\
-The differences from the former default ruleset, 'classic', are listed in\
- full in README.civ2civ3.\
-")
+; ルールセットの概要
+; クライアントでは、ルールセットの説明ファイルの内容と一緒に表示されます。
+summary = _("本ルールセットについては、ゲーム内ヘルプおよび下記リンクをご確認ください。\nhttps://github.com/umiteru2004/freeciv/blob/develop/rulesets/umi/README.md")
 
-; Detailed description
-; When updating this, update also description_file in [ruledit] section to match
-description = *civ2civ3/README.civ2civ3*
+; この項目を更新する際は、[ruledit]セクションのdescription_fileも、一致するように更新します。
+description = *umi/README.md*
 
-; What capabilities ruleset provides for the scenarios.
-; See doc/README.rulesets for definitions of official capabilities
-; std-terrains         - At least standard set of terrains
+; ルールセットがシナリオに提供する能力
+; 能力の定義についてはdoc/README.rulesetsを参照してください。
+; std-terrains: 標準的な地形セット
 capabilities = "std-terrains"
 
 [options]
