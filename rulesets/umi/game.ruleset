@@ -54,21 +54,26 @@ global_init_buildings="Palace"
 ; preferred = ""
 
 [civstyle]
-; Value added to city pollution
+; 都市の公害値に加えられる値
 base_pollution   = -20
 
-; Cost in luxuries of making one citizen happier
+; 市民1人を幸福にするために必要な贅沢ポイント
 happy_cost       = 2
 
-; Cost in food of upkeeping a single citizen
+; 市民1人を維持するために必要な食料ポイント
 food_cost        = 2
 
-; Parameters used to generalize the calculation of city granary size:
-;   if city_size <= num_inis:
-;     city_granary_size = (granary_food_ini[city_size] * foodbox / 100)
-;   if city_size > num_inis;
-;     city_granary_size = (granary_food_ini[num_inis] +
-;        granary_food_inc * (city_size - num_inis)) * foodbox / 100
+; 都市の穀物庫の大きさ
+;
+; 都市サイズがgranary_food_iniのサイズ以下の場合、
+; 穀物庫の大きさはgranary_food_ini[都市サイズ]です。
+;
+; 都市サイズがgranary_food_iniのサイズより大きい場合、
+; 穀物庫の大きさは次式で決定されます。
+; granary_food_ini[granary_food_iniのサイズ]
+; + granary_food_inc * (都市サイズ - granary_food_incのサイズ)
+;
+; 穀物庫のサイズには、ゲーム設定における食料の係数が掛けられます。
 granary_food_ini = 20, 20, 20, 20, 20, 30, 30, 40
 granary_food_inc = 0
 
