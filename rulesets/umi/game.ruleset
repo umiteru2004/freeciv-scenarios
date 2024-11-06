@@ -5,7 +5,7 @@ description="Umi game rules for Freeciv"
 options="+Freeciv-3.1-ruleset web-compatible"
 format_version=20
 
-; このセクションには、freeciv-ruleditがルールセットファイルを再生成するための情報が含まれています。
+; このセクションには、freeciv-ruleditがルールセットファイルを再生成するためのメタ情報が含まれています。
 ; これらはゲームにおいては何の効果もありません。
 [ruledit]
 
