@@ -77,12 +77,12 @@ food_cost        = 2
 granary_food_ini = 20, 20, 20, 20, 20, 30, 30, 40
 granary_food_inc = 0
 
-; City center minimum outputs
+; 都市直下タイルが最低限産出するポイント
 min_city_center_food    = 0
 min_city_center_shield  = 0
 min_city_center_trade   = 0
 
-; Square of initial city radius
+; 都市圏の半径の2乗
 init_city_radius_sq     = 5
 
 ; Square of initially visible radius (true distance).
