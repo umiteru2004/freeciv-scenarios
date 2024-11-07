@@ -1,94 +1,68 @@
-
-; Modifying this file:
-; You should not modify this file except to make bugfixes or
-; for other "maintenance".  If you want to make custom changes
-; you should create a new datadir subdirectory and copy this file
-; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
-; use your new customized file.
-
 [datafile]
-description="Civ2Civ3 cities data for Freeciv"
+description="Umi cities data for Freeciv"
 options="+Freeciv-3.1-ruleset web-compatible"
 format_version=20
 
-; /* <-- avoid gettext warnings
+; 専門家とは、タイルで労働しない市民のことです。
+; 通常、そのタイプの専門家の条件を満たしている場合、各市民をどのタイプの専門家にするかを、プレイヤーは選択することができます。
 ;
-; A specialist is a city citizen who is not a tile worker.  Usually the
-; player can control what specialist each citizen is, so long as the
-; requirements for that specialist are met.
+; 以下は専門家についての項目で、専門家のタイプごとに1つずつあります。
+; タグ名（[specialist_*]）は一意であれば問題ありません。
 ;
-; Below are the entries for the specialists, one per specialist type.
-; The tag name (in [specialist_*]) doesn't matter so long as it's unique.
-; For each specialist the following fields may be set:
+; 各専門家について、以下の項目を設定することができます：
 ;
-;
-; name          = translatable (plural) name as seen by user
-; rule_name     = (optional) internal name for savegames, rulesets etc; if
-;                 not present, "name" is used for this purpose too. Since
-;                 the name used in savegames must not change, if you want
-;                 to rename an item after a ruleset has been released, you
-;                 should set "rule_name" to the original value of "name".
-; short_name    = one-character "short name" used (for instance) in cityrep;
-;                 should be first character/abbreviation of "name"
-; graphic       = tag specifying preferred graphic
-;                 Different images based on citizen number are supported.
-;                 If no such images indexed with citizen number are found,
-;                 plain tag is used instead.
-; graphic_alt   = fallback graphic tag in case the specialist graphic isn't
-;                 found.
-; reqs          = requirements to have the specialist pick (see
-;                 effects.ruleset and README.effects for help on requirements)
-; helptext      = optional help text string; should escape all raw newlines
-;                 so that xgettext parsing works
-;
-; */ <-- avoid gettext warnings
+; name          = プレイヤーが目にする翻訳可能な（複数形の）名前
+;                 ただし、プレイヤーが専門家の名前を目にすることは多くありません。
+; rule_name     = （オプション）セーブファイルやルールセットなどにおける内部名
+;                 この項目を省略した場合、"name"が内部名としても使用されます。
+;                 セーブファイルで使用される名前を変更することはできないので、ルールセットがリリースされた後に"name"を変更する場合は、"rule_name"を変更前の"name"と同じ値に設定してください。
+; short_name    = 都市報告などで使用される一文字の略称
+;                 "name"の最初の文字とします。
+; graphic       = グラフィックを指定するタグ
+;                 番号に基づく異なる画像がサポートされています。
+;                 画像が見つからない場合、代わりにプレーンタグが使用されます。
+; graphic_alt   = グラフィックが見つからない場合の、予備のグラフィックタグ。
+; reqs          = 専門家を選択するための条件
+;                 (条件についてはeffects.rulesetとREADME.effectsを参照)
+; helptext      = （オプション）ヘルプテキスト
+;                 xgettextが機能するように、改行はエスケープしてください。
 
-[specialist_elvis]
-name            = _("Entertainers")
-; (The original specialist names in the classic ruleset and derivatives were
-; not designed to be user-visible.)
-rule_name       = "elvis"
-short_name	= _("?Elvis:E")
-graphic         = "specialist.entertainer"
+[specialist_poet]
+name        = _("詩人")
+rule_name   = "Poet"
+short_name	= _("詩")
+graphic     = "specialist.entertainer"
 reqs		=
     { "type", "name", "range"
-; Nothing
     }
 helptext        = _("\
-Each entertainer produces two luxury points for their city per turn, \
-increasing to three once any player has built Shakespeare's Theater. \
-See the section on Happiness for the effects of luxury points.\
+詩人は1人あたり毎ターン2ptの贅沢ポイントを産出します。\
+\n\
+贅沢ポイントの効果については「幸福」節を参照してください。\
 ")
 
-[specialist_scientist]
-name            = _("Scientists")
-rule_name       = "scientist"
-short_name	= _("?Scientist:S")
-graphic         = "specialist.scientist"
+[specialist_scholar]
+name        = _("学者")
+rule_name   = "Scholar"
+short_name	= _("学")
+graphic     = "specialist.scientist"
 reqs		=
     { "type", "name", "range"
-; Nothing
     }
 helptext        = _("\
-Each scientist adds two points to your empire's research output \
-per turn, increasing to three once any player has built Darwin's \
-Voyage.\
+学者は1人あたり毎ターン2ptの研究ポイントを産出します。\
 ")
 
 [specialist_taxman]
-name            = _("Taxmen")
-rule_name       = "taxman"
-short_name	= _("?Taxman:T")
-graphic         = "specialist.taxman"
+name        = _("徴税人")
+rule_name   = "Taxman"
+short_name	= _("税")
+graphic     = "specialist.taxman"
 reqs		=
     { "type", "name", "range"
-; Nothing
     }
 helptext        = _("\
-Each tax collector produces two extra gold for your treasury \
-per turn, increasing to three once any player has built \
-A.Smith's Trading Co.\
+徴税人は1人あたり毎ターン金2を産出します。\
 ")
 
 [parameters]
