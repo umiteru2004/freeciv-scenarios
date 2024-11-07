@@ -24,7 +24,11 @@ name = _("Umi ruleset")
 
 ; ルールセットの概要
 ; クライアントでは、ルールセットの説明ファイルの内容と一緒に表示されます。
-summary = _("本ルールセットについては、ゲーム内ヘルプおよび下記リンクをご確認ください。\nhttps://github.com/umiteru2004/freeciv/blob/develop/rulesets/umi/README.md")
+summary = _("\
+本ルールセットについては、ゲーム内ヘルプおよび下記リンクをご確認ください。\
+\n\
+https://github.com/umiteru2004/freeciv/blob/develop/rulesets/umi/README.md\
+")
 
 ; この項目を更新する際は、[ruledit]セクションのdescription_fileも、一致するように更新します。
 description = *umi/README.md*
