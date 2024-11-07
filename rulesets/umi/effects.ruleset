@@ -200,21 +200,21 @@ reqs    =
 
 ; Specialist output bonuses
 
-[effect_elvis]
+[effect_poet]
 type    = "Specialist_Output"
 value   = 2
 reqs    =
     { "type", "name", "range"
-      "Specialist", "Elvis", "Local"
+      "Specialist", "Poet", "Local"
       "OutputType", "Luxury", "Local"
     }
 
-[effect_scientist]
+[effect_Scholar]
 type    = "Specialist_Output"
 value   = 2
 reqs    =
     { "type", "name", "range"
-      "Specialist", "Scientist", "Local"
+      "Specialist", "Scholar", "Local"
       "OutputType", "Science", "Local"
     }
 
@@ -3000,7 +3000,7 @@ value   = 1
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Darwin's Voyage", "World", TRUE
-      "Specialist", "Scientist", "Local"
+      "Specialist", "Scholar", "Local"
       "OutputType", "Science", "Local"
     }
 
@@ -3563,7 +3563,7 @@ value   = 1
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Shakespeare's Theatre", "World", TRUE
-      "Specialist", "Elvis", "Local"
+      "Specialist", "Poet", "Local"
       "OutputType", "Luxury", "Local"
     }
 
