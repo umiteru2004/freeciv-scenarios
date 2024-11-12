@@ -66,9 +66,11 @@ helptext        = _("\
 ")
 
 [parameters]
-add_to_size_limit  = 8		; cities >= this cannot be added to.
-angry_citizens = TRUE           ; set to FALSE to disable angry citizens
-celebrate_size_limit = 3        ; cities >= can celebrate
+; サイズがこの値以上の都市では、ユニットを編入させて人口を増やすことができません。
+add_to_size_limit = 8
+
+angry_citizens          = TRUE  ; FALSEの場合、不幸市民は発生しなくなります。
+celebrate_size_limit    = 3     ; サイズがこの値未満の都市では、祝祭を開催することができません。
 
 changable_tax = TRUE            ; set to FALSE to disallow changing of tax rates
 ;forced_science = 0		; set these fields when changeable_tax is turned off
