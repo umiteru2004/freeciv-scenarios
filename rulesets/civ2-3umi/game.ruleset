@@ -2173,19 +2173,33 @@ colorlist =
 ;
 set =
     { "name", "value"
+      "aifill", 6
       "generator", "FRACTAL"
       "topology", "WRAPX|ISO"
       "mapsize", "PLAYER"
-      "tilesperplayer", 100
       "tinyisles", "ENABLED"
       "flatpoles", 0
-      "startunits", "cwsx"
-      "citymindist", 3
       "techlevel", 1
       "foggedborders", "ENABLED"
-      "restrictinfra", "ENABLED"
       "unreachableprotects", "DISABLED"
       "occupychance", 100
       "techlossforgiveness", 0
       "revolentype", "RANDQUICK"
+      "traitdistribution", "EVEN"
+      "migration", "ENABLED"
+      "aqueductloss", 20
+      "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
+      "revealmap", "DEAD"
+      "techlost_recv", 20
+      "techlost_donor", 20
+      "diplbulbcost", 20
+      "diplgoldcost", 20
+      "incite_gold_loss_chance", 20
+      "incite_gold_capt_chance", 20
+      "conquercost", 20
+      "freecost", 20
+      "victories", "SPACERACE|ALLIED|CULTURE"
+      "scorelog", "ENABLED"
+      "persistentready", "CONNECTED"
+      "iphide", "ENABLED"
     }
