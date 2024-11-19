@@ -57,15 +57,6 @@ reqs    =
       "OutputType", "Luxury", "Local"
     }
 
-[effect_ai_cheat_gold]
-type    = "Output_Bonus_2"
-value   = 40
-reqs    =
-    { "type", "name", "range"
-      "AI", "Cheating", "Player"
-      "OutputType", "Gold", "Local"
-    }
-
 [effect_ai_cheat_shield]
 type    = "Output_Bonus_2"
 value   = 40
