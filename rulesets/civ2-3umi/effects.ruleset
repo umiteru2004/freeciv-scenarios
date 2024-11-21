@@ -39,14 +39,6 @@ reqs    =
       "OutputType", "Food", "Local"
     }
 
-[effect_ai_cheat_love]
-type    = "Gain_AI_Love"
-value   = 40
-reqs    =
-    { "type", "name", "range"
-      "AI", "Cheating", "Player"
-    }
-
 [effect_ai_cheat_sci]
 type    = "Output_Bonus_2"
 value   = 40
@@ -63,15 +55,6 @@ reqs    =
     { "type", "name", "range"
       "AI", "Cheating", "Player"
       "OutputType", "Luxury", "Local"
-    }
-
-[effect_ai_cheat_gold]
-type    = "Output_Bonus_2"
-value   = 40
-reqs    =
-    { "type", "name", "range"
-      "AI", "Cheating", "Player"
-      "OutputType", "Gold", "Local"
     }
 
 [effect_ai_cheat_shield]
