@@ -2190,6 +2190,7 @@ set =
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
+      "sciencebox", 80
       "techlost_recv", 20
       "techlost_donor", 20
       "diplbulbcost", 20
