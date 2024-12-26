@@ -2011,8 +2011,8 @@ cons_msg       = _("Your nation has achieved 10000 culture points!")
 [trade]
 settings =
   { "type",       "pct", "cancelling", "bonus"
-    "National",   0,     "Cancel",     "None"
-    "NationalIC", 0,     "Cancel",     "None"
+    "National",   100,   "Cancel",     "None"
+    "NationalIC", 200,   "Cancel",     "None"
     "IN",         100,   "Cancel",     "Gold"
     "INIC",       200,   "Cancel",     "Gold"
     "Ally",       100,   "Cancel",     "Gold"
@@ -2170,24 +2170,32 @@ set =
     { "name", "value"
       "aifill", 6
       "generator", "FRACTAL"
-      "topology", "WRAPX|WRAPY|ISO|HEX"
+      "topology", "WRAPX|ISO"
       "mapsize", "PLAYER"
-      "tilesperplayer", 100
       "tinyisles", "ENABLED"
-      "temperature", 60
       "flatpoles", 0
-      "startunits", "cwsx"
-      "citymindist", 3
       "techlevel", 1
-      "borders", "ENABLED"
       "foggedborders", "ENABLED"
-      "restrictinfra", "ENABLED"
       "unreachableprotects", "DISABLED"
-      "onsetbarbs", 120
       "occupychance", 100
-      "razechance", 10
       "techlossforgiveness", 0
-      "techlossrestore", 50
       "revolentype", "RANDQUICK"
-      "tradeworldrelpct", 100
+      "traitdistribution", "EVEN"
+      "migration", "ENABLED"
+      "aqueductloss", 20
+      "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
+      "revealmap", "DEAD"
+      "sciencebox", 80
+      "techlost_recv", 20
+      "techlost_donor", 20
+      "diplbulbcost", 20
+      "diplgoldcost", 20
+      "incite_gold_loss_chance", 20
+      "incite_gold_capt_chance", 20
+      "conquercost", 20
+      "freecost", 20
+      "victories", "SPACERACE|ALLIED|CULTURE"
+      "scorelog", "ENABLED"
+      "persistentready", "CONNECTED"
+      "iphide", "ENABLED"
     }
