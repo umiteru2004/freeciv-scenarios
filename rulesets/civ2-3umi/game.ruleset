@@ -2191,8 +2191,6 @@ set =
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
       "sciencebox", 80
-      "techlost_recv", 20
-      "techlost_donor", 20
       "diplbulbcost", 20
       "diplgoldcost", 20
       "incite_gold_loss_chance", 20
