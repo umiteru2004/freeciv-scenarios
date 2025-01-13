@@ -2185,7 +2185,7 @@ set =
       "startpos", "VARIABLE"
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
-      "endturn", "240"
+      "endturn", 240
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
