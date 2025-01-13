@@ -2180,18 +2180,15 @@ set =
       "flatpoles", 0
       "techlevel", 1
       "foggedborders", "ENABLED"
-      "unreachableprotects", "DISABLED"
-      "occupychance", 100
       "techlossforgiveness", 0
-      "revolentype", "RANDQUICK"
       "size", 1
       "startpos", "VARIABLE"
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
+      "endturn", "240"
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
-      "sciencebox", 80
       "diplbulbcost", 20
       "diplgoldcost", 20
       "incite_gold_loss_chance", 20
@@ -2199,7 +2196,10 @@ set =
       "conquercost", 20
       "freecost", 20
       "victories", "SPACERACE|ALLIED|CULTURE"
+      "timeout", 60
+      "unitwaittime", 10
       "scorelog", "ENABLED"
       "persistentready", "CONNECTED"
+      "allowtake", "H3A3h3a3do"
       "iphide", "ENABLED"
     }
