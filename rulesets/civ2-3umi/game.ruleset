@@ -2185,7 +2185,7 @@ set =
       "startpos", "VARIABLE"
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
-      "endturn", 240
+      "endturn", 250
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
@@ -2196,7 +2196,7 @@ set =
       "conquercost", 20
       "freecost", 20
       "victories", "SPACERACE|ALLIED|CULTURE"
-      "timeout", 60
+      "timeout", 50
       "first_timeout", 0
       "unitwaittime", 10
       "scorelog", "ENABLED"
