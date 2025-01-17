@@ -2173,26 +2173,22 @@ colorlist =
 ;
 set =
     { "name", "value"
-      "aifill", 6
-      "generator", "FRACTAL"
+      "aifill", 8
+      "generator", "ISLAND"
       "topology", "WRAPX|ISO"
-      "mapsize", "PLAYER"
       "tinyisles", "ENABLED"
       "flatpoles", 0
       "techlevel", 1
       "foggedborders", "ENABLED"
-      "unreachableprotects", "DISABLED"
-      "occupychance", 100
       "techlossforgiveness", 0
-      "revolentype", "RANDQUICK"
+      "size", 1
+      "startpos", "VARIABLE"
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
+      "endturn", 250
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
-      "sciencebox", 80
-      "techlost_recv", 20
-      "techlost_donor", 20
       "diplbulbcost", 20
       "diplgoldcost", 20
       "incite_gold_loss_chance", 20
@@ -2200,7 +2196,11 @@ set =
       "conquercost", 20
       "freecost", 20
       "victories", "SPACERACE|ALLIED|CULTURE"
+      "timeout", 50
+      "first_timeout", 0
+      "unitwaittime", 10
       "scorelog", "ENABLED"
       "persistentready", "CONNECTED"
+      "allowtake", "H3A3h3a3do"
       "iphide", "ENABLED"
     }
