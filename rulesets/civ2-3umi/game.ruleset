@@ -118,7 +118,7 @@ pillage_select           = TRUE
 tech_steal_allow_holes    = FALSE
 ; Whether one can get a tech for which prereqs are not known via
 ; diplomatic trading
-tech_trade_allow_holes    = FALSE
+tech_trade_allow_holes    = TRUE
 ; ...and whether one can lose a tech which is prereq for another known
 ; tech via trade, if techlost_donor is nonzero
 tech_trade_loss_allow_holes = FALSE
