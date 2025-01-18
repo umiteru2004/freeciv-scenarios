@@ -51029,11 +51029,11 @@ msgstr "未知の領域にも国境線を拡張し、線内全域が視界"
 
 #: server/settings.c:423
 msgid "Fixed"
-msgstr "不均一"
+msgstr "固定"
 
 #: server/settings.c:424
 msgid "Even"
-msgstr "均一"
+msgstr "ランダム"
 
 #: server/settings.c:435
 msgid "Per-player, in order"
@@ -52402,17 +52402,16 @@ msgstr ""
 
 #: server/settings.c:2229
 msgid "Food required for a city to grow"
-msgstr "都市拡大に必要な食料"
+msgstr "食料の係数(%)"
 
-# clefs
 #: server/settings.c:2230
 msgid ""
 "This is the base amount of food required to grow a city. This value is "
 "multiplied by another factor that comes from the ruleset and is dependent on "
 "the size of the city."
 msgstr ""
-"都市が拡大するために必要な食料の量です。この値はルールセットによる他の要素に"
-"より修正されるほか、都市の大きさによっても変わってきます。"
+"都市が成長するために必要な食料の量に掛けられる係数です。\n"
+"この量はルールセットで設定されており、都市サイズに依存します。"
 
 #: server/settings.c:2238
 msgid "Percentage food lost when city can't grow"

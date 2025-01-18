@@ -1,61 +1,41 @@
-; Modifying this file:
-; You should not modify this file except to make bugfixes or
-; for other "maintenance".  If you want to make custom changes,
-; you should create a new datadir subdirectory and copy this file
-; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
-; use your new customized file.
-
-; Note that the freeciv AI may not cope well with anything more
-; than minor changes.
+; AIが正常に動作しなくなる可能性があるため、ルールセットを大幅に変更することは避けてください。
 
 [datafile]
-description="Civ2Civ3 game rules for Freeciv"
+description="Umi game rules for Freeciv"
 options="+Freeciv-3.1-ruleset web-compatible"
 format_version=20
 
-; This section contains meta information for freeciv-ruledit to recreate the ruleset
-; file in a form wanted. These have no in-game effect whatsoever
+; このセクションには、freeciv-ruleditがルールセットファイルを再生成するためのメタ情報が含まれています。
+; これらはゲームにおいては何の効果もありません。
 [ruledit]
 
-; Which file to read description in from.
-description_file = "civ2civ3/README.civ2civ3"
+; ゲーム内ヘルプに表示される説明ファイルの場所
+description_file = "umi/README.md"
 
 [about]
-; Ruleset name
-name = _("Civ2Civ3 ruleset")
+; ルールセットの名前
+name = _("Umi ruleset")
 
-; There`s no separate versioning in rulesets part of main freeciv distribution
 ;version = ""
 
-; When about to migrate ruleset under a new name in the future version, set
-; alt_dir to the name of that future directory. Then savegames saved with this
-; version of freeciv can find the ruleset from the correct place when loading
-; the savegame to the future version.
+; 将来、ルールセットの名前を変更する予定がある場合、alt_dirに変更後のディレクトリの名前を設定します。
+; これにより、変更前にセーブしたゲームを変更後にロードするときに、正常にルールセットを読み込むことができます。
 ;alt_dir = ""
 
-; Summary of the ruleset
-; /* TRANS: In the client, this is displayed alongside the contents of
-;    README.civ2civ3, which are not localized. */
+; ルールセットの概要
+; クライアントでは、ルールセットの説明ファイルの内容と一緒に表示されます。
 summary = _("\
-You are playing Freeciv with civ2civ3 rules:\
-\n\n\
-Gameplay more similar to civ3, keeping the combat system from civ2.\
-\n\n\
-Adapted for single player, with AI less aggressive at start,\
- but more challenging at the end.\
-\n\n\
-The differences from the former default ruleset, 'classic', are listed in\
- full in README.civ2civ3.\
+本ルールセットについては、ゲーム内ヘルプおよび下記リンクをご確認ください。\
+\n\
+https://github.com/umiteru2004/freeciv/blob/develop/rulesets/umi/README.md\
 ")
 
-; Detailed description
-; When updating this, update also description_file in [ruledit] section to match
-description = *civ2civ3/README.civ2civ3*
+; この項目を更新する際は、[ruledit]セクションのdescription_fileも、一致するように更新します。
+description = *umi/README.md*
 
-; What capabilities ruleset provides for the scenarios.
-; See doc/README.rulesets for definitions of official capabilities
-; std-terrains         - At least standard set of terrains
+; ルールセットがシナリオに提供する能力
+; 能力についてはdoc/README.rulesetsを参照してください。
+; std-terrains: 標準的な地形セット
 capabilities = "std-terrains"
 
 [options]
@@ -63,45 +43,50 @@ global_init_techs=""
 global_init_buildings="Palace"
 
 [tileset]
-; If preferred tileset is set, clients that support the feature will suggest
-; using that tileset with the ruleset.
+; 優先するタイルセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたタイルセットを使用することを提案します。
 ; preferred = ""
 
 [soundset]
-; If preferred soundset is set, clients that support the feature will suggest
-; using that soundset with the ruleset.
+; 優先するサウンドセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたサウンドセットを使用することを提案します。
 ; preferred = ""
 
 [musicset]
-; If preferred musicset is set, clients that support the feature will suggest
-; using that musicset with the ruleset.
+; 優先するBGMセット
+; この項目が設定されている場合、この機能をサポートしているクライアントは、このルールセットを使用する際に、設定されたBGMセットを使用することを提案します。
 ; preferred = ""
 
 [civstyle]
-; Value added to city pollution
+; 都市の公害値に加えられる値
 base_pollution   = -20
 
-; Cost in luxuries of making one citizen happier
+; 市民1人を幸福にするために必要な贅沢ポイント
 happy_cost       = 2
 
-; Cost in food of upkeeping a single citizen
+; 市民1人を維持するために必要な食料ポイント
 food_cost        = 2
 
-; Parameters used to generalize the calculation of city granary size:
-;   if city_size <= num_inis:
-;     city_granary_size = (granary_food_ini[city_size] * foodbox / 100)
-;   if city_size > num_inis;
-;     city_granary_size = (granary_food_ini[num_inis] +
-;        granary_food_inc * (city_size - num_inis)) * foodbox / 100
+; 都市の穀物庫の大きさ
+;
+; 都市サイズがgranary_food_iniのサイズ以下の場合、
+; 穀物庫の大きさはgranary_food_ini[都市サイズ]です。
+;
+; 都市サイズがgranary_food_iniのサイズより大きい場合、
+; 穀物庫の大きさは次式で決定されます。
+; granary_food_ini[granary_food_iniのサイズ]
+; + granary_food_inc * (都市サイズ - granary_food_incのサイズ)
+;
+; 穀物庫のサイズには、ゲーム設定における食料の係数が掛けられます。
 granary_food_ini = 20, 20, 20, 20, 20, 30, 30, 40
 granary_food_inc = 0
 
-; City center minimum outputs
+; 都市直下タイルが最低限産出するポイント
 min_city_center_food    = 0
 min_city_center_shield  = 0
 min_city_center_trade   = 0
 
-; Square of initial city radius
+; 都市圏の半径の2乗
 init_city_radius_sq     = 5
 
 ; Square of initially visible radius (true distance).
@@ -2026,8 +2011,8 @@ cons_msg       = _("Your nation has achieved 10000 culture points!")
 [trade]
 settings =
   { "type",       "pct", "cancelling", "bonus"
-    "National",   0,     "Cancel",     "None"
-    "NationalIC", 0,     "Cancel",     "None"
+    "National",   100,   "Cancel",     "None"
+    "NationalIC", 200,   "Cancel",     "None"
     "IN",         100,   "Cancel",     "Gold"
     "INIC",       200,   "Cancel",     "Gold"
     "Ally",       100,   "Cancel",     "Gold"
@@ -2185,24 +2170,32 @@ set =
     { "name", "value"
       "aifill", 6
       "generator", "FRACTAL"
-      "topology", "WRAPX|WRAPY|ISO|HEX"
+      "topology", "WRAPX|ISO"
       "mapsize", "PLAYER"
-      "tilesperplayer", 100
       "tinyisles", "ENABLED"
-      "temperature", 60
       "flatpoles", 0
-      "startunits", "cwsx"
-      "citymindist", 3
       "techlevel", 1
-      "borders", "ENABLED"
       "foggedborders", "ENABLED"
-      "restrictinfra", "ENABLED"
       "unreachableprotects", "DISABLED"
-      "onsetbarbs", 120
       "occupychance", 100
-      "razechance", 10
       "techlossforgiveness", 0
-      "techlossrestore", 50
       "revolentype", "RANDQUICK"
-      "tradeworldrelpct", 100
+      "traitdistribution", "EVEN"
+      "migration", "ENABLED"
+      "aqueductloss", 20
+      "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
+      "revealmap", "DEAD"
+      "sciencebox", 80
+      "techlost_recv", 20
+      "techlost_donor", 20
+      "diplbulbcost", 20
+      "diplgoldcost", 20
+      "incite_gold_loss_chance", 20
+      "incite_gold_capt_chance", 20
+      "conquercost", 20
+      "freecost", 20
+      "victories", "SPACERACE|ALLIED|CULTURE"
+      "scorelog", "ENABLED"
+      "persistentready", "CONNECTED"
+      "iphide", "ENABLED"
     }

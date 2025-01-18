@@ -39,14 +39,6 @@ reqs    =
       "OutputType", "Food", "Local"
     }
 
-[effect_ai_cheat_love]
-type    = "Gain_AI_Love"
-value   = 40
-reqs    =
-    { "type", "name", "range"
-      "AI", "Cheating", "Player"
-    }
-
 [effect_ai_cheat_sci]
 type    = "Output_Bonus_2"
 value   = 40
@@ -63,15 +55,6 @@ reqs    =
     { "type", "name", "range"
       "AI", "Cheating", "Player"
       "OutputType", "Luxury", "Local"
-    }
-
-[effect_ai_cheat_gold]
-type    = "Output_Bonus_2"
-value   = 40
-reqs    =
-    { "type", "name", "range"
-      "AI", "Cheating", "Player"
-      "OutputType", "Gold", "Local"
     }
 
 [effect_ai_cheat_shield]
@@ -200,21 +183,21 @@ reqs    =
 
 ; Specialist output bonuses
 
-[effect_elvis]
+[effect_poet]
 type    = "Specialist_Output"
 value   = 2
 reqs    =
     { "type", "name", "range"
-      "Specialist", "Elvis", "Local"
+      "Specialist", "Poet", "Local"
       "OutputType", "Luxury", "Local"
     }
 
-[effect_scientist]
+[effect_Scholar]
 type    = "Specialist_Output"
 value   = 2
 reqs    =
     { "type", "name", "range"
-      "Specialist", "Scientist", "Local"
+      "Specialist", "Scholar", "Local"
       "OutputType", "Science", "Local"
     }
 
@@ -1437,6 +1420,22 @@ reqs    =
       "Gov", "Federation", "Player", FALSE
       "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+    }
+
+[effect_rapture_grow_0]
+type    = "Rapture_Grow"
+value   = 3
+reqs	=
+    { "type",       "name",      "range"
+      "Gov", "Republic",  "Player"
+    }
+
+[effect_rapture_grow_1]
+type    = "Rapture_Grow"
+value   = 3
+reqs	=
+    { "type",       "name",      "range"
+      "Gov", "Democracy", "Player"
     }
 
 ; Railroad because makes Pyramids obsolete
@@ -3000,7 +2999,7 @@ value   = 1
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Darwin's Voyage", "World", TRUE
-      "Specialist", "Scientist", "Local"
+      "Specialist", "Scholar", "Local"
       "OutputType", "Science", "Local"
     }
 
@@ -3563,7 +3562,7 @@ value   = 1
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Shakespeare's Theatre", "World", TRUE
-      "Specialist", "Elvis", "Local"
+      "Specialist", "Poet", "Local"
       "OutputType", "Luxury", "Local"
     }
 
