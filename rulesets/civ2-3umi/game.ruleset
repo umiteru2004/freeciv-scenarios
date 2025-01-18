@@ -118,7 +118,7 @@ pillage_select           = TRUE
 tech_steal_allow_holes    = FALSE
 ; Whether one can get a tech for which prereqs are not known via
 ; diplomatic trading
-tech_trade_allow_holes    = FALSE
+tech_trade_allow_holes    = TRUE
 ; ...and whether one can lose a tech which is prereq for another known
 ; tech via trade, if techlost_donor is nonzero
 tech_trade_loss_allow_holes = FALSE
@@ -2018,12 +2018,12 @@ settings =
   { "type",       "pct", "cancelling", "bonus"
     "National",   100,   "Cancel",     "None"
     "NationalIC", 200,   "Cancel",     "None"
-    "IN",         100,   "Cancel",     "Gold"
-    "INIC",       200,   "Cancel",     "Gold"
-    "Ally",       100,   "Cancel",     "Gold"
-    "AllyIC",     200,   "Cancel",     "Gold"
-    "Enemy",      0,     "Cancel",     "Gold"
-    "EnemyIC",    0,     "Cancel",     "Gold"
+    "IN",         120,   "Cancel",     "Gold"
+    "INIC",       240,   "Cancel",     "Gold"
+    "Ally",       120,   "Cancel",     "Gold"
+    "AllyIC",     240,   "Cancel",     "Gold"
+    "Enemy",      100,   "Cancel",     "Gold"
+    "EnemyIC",    200,   "Cancel",     "Gold"
     "Team",       100,   "Cancel",     "Gold"
     "TeamIC",     200,   "Cancel",     "Gold"
   }
@@ -2173,22 +2173,27 @@ colorlist =
 ;
 set =
     { "name", "value"
-      "aifill", 8
+      "aifill", 6
       "generator", "ISLAND"
       "topology", "WRAPX|ISO"
+      "mapsize", "XYSIZE"
       "tinyisles", "ENABLED"
       "flatpoles", 0
       "techlevel", 1
       "foggedborders", "ENABLED"
       "techlossforgiveness", 0
-      "size", 1
+      "xsize", 24
+      "ysize", 32
       "startpos", "VARIABLE"
+      "huts", 0
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
       "endturn", 250
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
+      "techlevel", 0
+      "sciencebox", 180
       "diplbulbcost", 20
       "diplgoldcost", 20
       "incite_gold_loss_chance", 20
