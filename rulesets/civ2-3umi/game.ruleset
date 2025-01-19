@@ -2174,17 +2174,14 @@ colorlist =
 set =
     { "name", "value"
       "aifill", 6
-      "generator", "ISLAND"
+      "generator", "FRACTAL"
       "topology", "WRAPX|ISO"
-      "mapsize", "XYSIZE"
+      "mapsize", "PLAYER"
       "tinyisles", "ENABLED"
       "flatpoles", 0
-      "techlevel", 1
+      "techlevel", 0
       "foggedborders", "ENABLED"
       "techlossforgiveness", 0
-      "xsize", 24
-      "ysize", 32
-      "startpos", "VARIABLE"
       "huts", 0
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
@@ -2192,7 +2189,6 @@ set =
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
       "revealmap", "DEAD"
-      "techlevel", 0
       "sciencebox", 180
       "diplbulbcost", 20
       "diplgoldcost", 20
