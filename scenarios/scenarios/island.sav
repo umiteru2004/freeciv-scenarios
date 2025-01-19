@@ -1,7 +1,15 @@
 
 [scenario]
 game_version=3010400
-is_scenario=FALSE
+is_scenario=TRUE
+name=_("うみてるの島戦")
+authors=_("Umiteru")
+description=_("うみてるの島ベースマップです。")
+save_random=FALSE
+players=FALSE
+startpos_nations=FALSE
+lake_flooding=TRUE
+ruleset_locked=TRUE
 
 [savefile]
 options=" +version3"
@@ -85,9 +93,15 @@ vars=$$
 
 [settings]
 set={"name","value"
-"nationset","all"
+"aifill", 8
+"mapsize", "XYSIZE"
+"xsize", 32
+"ysize", 32
+"generator", "ISLAND"
+"startpos", "VARIABLE"
+"nationset", "all"
 }
-set_count=1
+set_count=7
 gamestart_valid=FALSE
 
 [ruledata]
