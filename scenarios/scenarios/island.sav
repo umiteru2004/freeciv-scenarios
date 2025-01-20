@@ -6,9 +6,10 @@ name=_("うみてるの島戦")
 authors=_("Umiteru")
 description=_("うみてるの島ベースマップです。\n\n毎回異なる、比較的小さな島ベースのマップを生成します。")
 save_random=FALSE
-players=FALSE
+players=TRUE
 startpos_nations=FALSE
 lake_flooding=TRUE
+handmade=TRUE
 ruleset_locked=TRUE
 
 [savefile]
