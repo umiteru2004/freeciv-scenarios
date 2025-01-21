@@ -2181,7 +2181,6 @@ set =
       "flatpoles", 0
       "techlevel", 0
       "foggedborders", "ENABLED"
-      "techlossforgiveness", 0
       "huts", 0
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
