@@ -2177,6 +2177,7 @@ set =
       "generator", "FRACTAL"
       "topology", "WRAPX|ISO"
       "mapsize", "PLAYER"
+      "tinyisles", "ENABLED"
       "flatpoles", 0
       "techlevel", 0
       "foggedborders", "ENABLED"
