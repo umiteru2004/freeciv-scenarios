@@ -10,3 +10,4 @@ set xsize 32
 set ysize 32
 set startpos "VARIABLE"
 set nationset "all"
+set scorefile "freeciv-score-sns-is.log"
