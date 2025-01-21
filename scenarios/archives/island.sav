@@ -4,17 +4,18 @@ game_version=3010400
 is_scenario=TRUE
 name=_("うみてるの島戦")
 authors=_("Umiteru")
-description=_("うみてるの島ベースマップです。")
+description=_("うみてるの島ベースマップです。\n\n毎回異なる、比較的小さな島ベースのマップを生成します。")
 save_random=FALSE
-players=FALSE
+players=TRUE
 startpos_nations=FALSE
 lake_flooding=TRUE
+handmade=TRUE
 ruleset_locked=TRUE
 
 [savefile]
 options=" +version3"
 version=50
-reason="User request"
+reason="Scenario"
 revision="3.1.4"
 rulesetdir="civ2-3umi"
 improvement_size=73
@@ -82,6 +83,7 @@ warminglevel=0
 nuclearwinter=0
 cooling=0
 coolinglevel=0
+random_seed=771615991
 global_advances="1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 save_players=FALSE
 
@@ -89,6 +91,7 @@ save_players=FALSE
 saved=FALSE
 
 [script]
+code=$$
 vars=$$
 
 [settings]
@@ -102,7 +105,7 @@ set={"name","value"
 "nationset", "all"
 }
 set_count=7
-gamestart_valid=FALSE
+gamestart_valid=TRUE
 
 [ruledata]
 government={"name","changes"
@@ -116,23 +119,6 @@ government={"name","changes"
 "Republic",0
 "Democracy",0
 }
-
-[event_cache]
-events={"turn","phase","timestamp","x","y","server_state","event","target","message"
-0,0,1737273061,-1,-1,"S_S_INITIAL","E_CONNECTION","All","[c fg=\"#8B0000\"]Umiteru（プレイヤー名: Umiteru）はlocalhostから接続しています。[/c]"
-0,0,1737273062,-1,-1,"S_S_INITIAL","E_SETTING","All","Umiteru: 'set topology \"WRAPX|ISO\"'"
-0,0,1737273066,-1,-1,"S_S_INITIAL","E_SETTING","All","Umiteru: 'rulesetdir civ2-3umi'"
-0,0,1737273066,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]ルールセットディレクトリを\"civ2-3umi\"に設定します。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","Umiteru: 'Cheating '"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]プレイヤー'AI*2'は'チート'レベルのAIになりました。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]プレイヤー'AI*3'は'チート'レベルのAIになりました。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]プレイヤー'AI*4'は'チート'レベルのAIになりました。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]プレイヤー'AI*5'は'チート'レベルのAIになりました。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]プレイヤー'AI*6'は'チート'レベルのAIになりました。[/c]"
-0,0,1737273072,-1,-1,"S_S_INITIAL","E_SETTING","All","[c fg=\"#8B0000\"]デフォルトのAIレベルを'チート'に設定しました。[/c]"
-0,0,1737273079,-1,-1,"S_S_INITIAL","E_SETTING","All","Umiteru: 'set nationset \"all\"'"
-}
-count=12
 
 [history]
 turn=-2

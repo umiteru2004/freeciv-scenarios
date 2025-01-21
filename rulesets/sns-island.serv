@@ -1,0 +1,12 @@
+# 日本のFreecivコミュニティ「FreecivSNS」における、
+# 島ベースマップのゲームを作成するサーバーコマンドです。
+
+Cheating
+rulesetdir civ2-3umi
+set aifill 8
+set generator "ISLAND"
+set mapsize "XYSIZE"
+set xsize 32
+set ysize 32
+set startpos "VARIABLE"
+set nationset "all"
