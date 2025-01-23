@@ -2187,7 +2187,6 @@ set =
       "endturn", 250
       "aqueductloss", 20
       "airliftingstyle", "FROM_ALLIES|TO_ALLIES"
-      "revealmap", "DEAD"
       "sciencebox", 180
       "diplbulbcost", 20
       "diplgoldcost", 20
