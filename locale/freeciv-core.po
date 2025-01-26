@@ -30502,7 +30502,7 @@ msgstr ""
 #: data/civ2civ3/buildings.ruleset:2237 data/alien/buildings.ruleset:590
 #: data/multiplayer/buildings.ruleset:1939
 msgid "Coinage"
-msgstr "貨幣"
+msgstr "硬貨"
 
 #: data/classic/buildings.ruleset:1970 data/sandbox/buildings.ruleset:2502
 #: data/civ2civ3/buildings.ruleset:2261 data/alien/buildings.ruleset:606
@@ -30517,7 +30517,7 @@ msgid ""
 "Coinage means its shield production is converted to tax output (money, "
 "coins!)."
 msgstr ""
-"これは普通の都市施設ではありません。都市の生産を貨幣にセットすると、生産物を税"
+"これは普通の都市施設ではありません。都市の生産を硬貨にセットすると、生産物を税"
 "金として得ます。"
 
 #: data/classic/cities.ruleset:72 data/multiplayer/cities.ruleset:71
@@ -37955,7 +37955,7 @@ msgstr ""
 "の各項目は、単一の生産物（ユニットなど）を表します。都市はこれらの生産物を順"
 "番に生産していきます。生産待ちリストに指定された項目を生産し終わると、可能であれ"
 "ば最後の項目を再び生産しようとします。不可能な場合は新たな目標を自動的に選択"
-"します。都市が金を生産している（classicルールでは「貨幣」の生産）場合、そのま"
+"します。都市が金を生産している（classicルールでは「硬貨」の生産）場合、そのま"
 "まではこの活動は停止しません。生産待ちリストに項目を追加すると、金の生産が停止"
 "し、次のターンからは追加した項目の生産が始まります。ルールセットで許している"
 "場合、生産待ちリストに並んでいる同種のユニットを1ターンのうちに複数生産することが"
@@ -41707,7 +41707,7 @@ msgid ""
 "This is not a normal improvement. Instead, setting a city's production to "
 "this means its shield production is converted to infra points."
 msgstr ""
-"これは普通の都市施設ではありません。都市の生産を貨幣にセットすると、生産物を税"
+"これは普通の都市施設ではありません。都市の生産を硬貨にセットすると、生産物を税"
 "金として得ます。"
 
 #: data/granularity/cities.ruleset:48
