@@ -1,6 +1,6 @@
 
 [client]
-version="3.1.3"
+version="3.1.4"
 save_options_on_exit=FALSE
 fullscreen_mode=FALSE  # deprecated
 migration_gtk3_from_gtk2=FALSE
@@ -9,8 +9,8 @@ migration_gtk4_from_gtk3_22=FALSE
 migration_sdl2_from_sdl=FALSE
 migration_gtk2_from_2_5=FALSE
 migration_gtk3_from_2_5=FALSE
-migration_qt_from_2_5=FALSE
-flag_qt_default_fonts_set=FALSE
+migration_qt_from_2_5=TRUE
+flag_qt_default_fonts_set=TRUE
 default_user_name="Umiteru"
 use_prev_server=FALSE
 default_server_host="localhost"
@@ -25,7 +25,7 @@ gui_gtk3_default_theme_name="Freeciv"
 gui_gtk3_22_default_theme_name="Freeciv"
 gui_gtk4_default_theme_name="Freeciv"
 gui_sdl2_default_theme_name="human"
-gui_qt_default_theme_name="NightStalker"
+gui_qt_default_theme_name="System"
 default_tileset_square_name="amplio2"
 default_tileset_hex_name="hex2t"
 default_tileset_isohex_name="hexemplio"
@@ -251,14 +251,14 @@ gui_sdl2_font_city_names="10"
 gui_sdl2_font_city_productions="10"
 gui_qt_fullscreen=FALSE
 gui_qt_show_titlebar=TRUE
-gui_qt_font_default="Sans Serif,10,-1,5,75,0,0,0,0,0"
-gui_qt_font_notify_label="Monospace,9,-1,5,75,0,0,0,0,0"
-gui_qt_font_help_label="Sans Serif,9,-1,5,50,0,0,0,0,0"
-gui_qt_font_help_text="Monospace,8,-1,5,50,0,0,0,0,0"
-gui_qt_font_chatline="Monospace,8,-1,5,50,0,0,0,0,0"
-gui_qt_font_city_names="Sans Serif,10,-1,5,75,0,0,0,0,0"
-gui_qt_font_city_productions="Sans Serif,10,-1,5,50,1,0,0,0,0"
-gui_qt_font_reqtree_text="Sans Serif,10,-1,5,50,1,0,0,0,0"
+gui_qt_font_default=".AppleSystemUIFont,14,-1,5,50,0,0,0,0,0"
+gui_qt_font_notify_label=".AppleSystemUIFont,14,-1,5,50,0,0,0,0,0"
+gui_qt_font_help_label=".AppleSystemUIFont,14,-1,5,50,0,0,0,0,0"
+gui_qt_font_help_text=".AppleSystemUIFont,14,-1,5,50,0,0,0,0,0"
+gui_qt_font_chatline=".AppleSystemUIFont,12,-1,5,50,0,0,0,0,0"
+gui_qt_font_city_names=".AppleSystemUIFont,14,-1,5,75,0,0,0,0,0"
+gui_qt_font_city_productions=".AppleSystemUIFont,14,-1,5,75,0,0,0,0,0"
+gui_qt_font_reqtree_text="Papyrus,14,-1,5,50,0,0,0,0,0"
 gui_qt_show_preview=TRUE
 gui_qt_sidebar_left=TRUE
 gui_qt_wakeup_text="Wake up %1"
@@ -432,7 +432,7 @@ event={"name","where"
 count=137
 
 [cma]
-number_of_presets=5  # 手でプリセットを追加する場合は，"number_of_presets"もアップデートしてください
+number_of_presets=5  # 手でプリセットを追加する場合は、"number_of_presets"もアップデートしてください
 preset={"name","minsurp0","factor0","minsurp1","factor1","minsurp2","factor2","minsurp3","factor3","minsurp4","factor4","minsurp5","factor5","reqhappy","happyfactor"
 "幸福追求",0,10,0,5,0,0,-20,4,0,0,0,4,FALSE,25
 "食料を最大に",-20,25,0,5,0,0,-20,4,0,0,0,4,FALSE,0
