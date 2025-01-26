@@ -2181,6 +2181,7 @@ set =
       "flatpoles", 0
       "techlevel", 0
       "foggedborders", "ENABLED"
+      "unreachableprotects", "DISABLED"
       "huts", 0
       "traitdistribution", "EVEN"
       "migration", "ENABLED"
