@@ -2016,8 +2016,8 @@ cons_msg       = _("Your nation has achieved 10000 culture points!")
 [trade]
 settings =
   { "type",       "pct", "cancelling", "bonus"
-    "National",   160,     "Cancel",     "None"
-    "NationalIC", 320,     "Cancel",     "None"
+    "National",   160,   "Cancel",     "None"
+    "NationalIC", 320,   "Cancel",     "None"
     "IN",         240,   "Cancel",     "Gold"
     "INIC",       480,   "Cancel",     "Gold"
     "Ally",       240,   "Cancel",     "Gold"
